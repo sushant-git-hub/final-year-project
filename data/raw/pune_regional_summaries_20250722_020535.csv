@@ -1,0 +1,7 @@
+avg_traffic_delay_min,max_traffic_delay_min,min_traffic_delay_min,avg_speed_kmph,most_congested_area,least_congested_area,overall_congestion,region_name,total_areas
+0.0,0,0,35.38,Shivajinagar,Shivajinagar,Light,Central Pune,5
+0.0,0,0,33.53,Koregaon Park,Koregaon Park,Light,East Pune,5
+0.0,0,0,42.56,Baner,Baner,Light,West Pune,5
+0.0,0,0,27.69,Aundh,Aundh,Light,North Pune,5
+0.0,0,0,41.32,Kothrud,Kothrud,Light,South Pune,5
+0.0,0,0,33.2,Hinjewadi,Hinjewadi,Light,PCMC Area,5
