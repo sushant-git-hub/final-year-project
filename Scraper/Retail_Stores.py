@@ -5,6 +5,7 @@ import time
 from typing import List, Dict, Set
 
 class EnhancedPuneRetailFinder:
+    
     def __init__(self, api_key: str):
         """
         Enhanced retail store finder that searches Pune comprehensively.
