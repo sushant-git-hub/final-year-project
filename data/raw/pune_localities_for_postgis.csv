@@ -1,0 +1,630 @@
+﻿locality,zone,tier,latitude,longitude,avg_rent_per_sqft,median_rent_per_sqft,commercial_rent_per_sqft,avg_rent,median_rent,min_rent,max_rent,avg_area_sqft,median_area_sqft,sample_size,confidence,avg_bedrooms,avg_bathrooms,data_source,last_updated
+Bhusari colony kothrud,Central Pune,Grade A,18.5074,73.8077,32.78,32.78,37.69,14750.0,14750.0,14750.0,14750.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Deccan Gymkhana,Central Pune,Grade A,18.5167,73.8422,30.0,30.0,34.5,9000.0,9000.0,9000.0,9000.0,300.0,300.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Deccan Hills,Central Pune,Grade C,18.5167,73.8422,7.37,7.37,8.47,7000.0,7000.0,7000.0,7000.0,950.0,950.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Erandwane,Central Pune,Grade A,18.5204,73.8567,28.23,28.64,32.47,23500.0,27500.0,9000.0,30000.0,850.0,1000.0,4,Low,1.8,1.8,Real Property Listings,2026-02-07
+Karve Nagar,Central Pune,Grade B,18.4881,73.8226,24.21,25.0,27.84,15415.43,15000.0,8000.0,25000.0,647.64,600.0,14,High,1.4,1.5,Real Property Listings,2026-02-07
+Karve Road,Central Pune,Grade B,18.5204,73.8567,23.33,23.33,26.83,30000.0,30000.0,20000.0,40000.0,1350.0,1350.0,2,Low,2.5,2.5,Real Property Listings,2026-02-07
+Karvenagar,Central Pune,Grade A,18.5204,73.8567,26.0,26.0,29.9,13000.0,13000.0,13000.0,13000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Koregaon Mul,Central Pune,Grade C,18.5204,73.8567,8.58,8.58,9.87,3500.0,3500.0,3500.0,3500.0,408.0,408.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Koregaon Park,Central Pune,Grade A,18.5362,73.8958,37.9,37.5,43.59,33440.53,26000.0,9500.0,85000.0,1111.03,1000.0,33,High,2.1,2.0,Real Property Listings,2026-02-07
+Koregaon Park Annexe,Central Pune,Grade A,18.5362,73.8958,34.67,30.82,39.87,24333.33,26000.0,16000.0,31000.0,773.67,970.0,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+Koregaon park,Central Pune,Premium,18.5362,73.8958,47.06,47.06,54.12,40000.0,40000.0,40000.0,40000.0,850.0,850.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kothrud,Central Pune,Grade A,18.5074,73.8077,27.34,26.84,31.44,18333.19,16000.0,7000.0,50000.0,670.47,600.0,47,High,1.5,1.5,Real Property Listings,2026-02-07
+Kothrud depo,Central Pune,Grade A,18.5074,73.8077,25.0,25.0,28.75,12500.0,12500.0,12500.0,12500.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kothrud pune,Central Pune,Grade A,18.5074,73.8077,25.0,25.0,28.75,15000.0,15000.0,15000.0,15000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Mantri Angan Koregaon park,Central Pune,Grade A,18.5362,73.8958,25.0,25.0,28.75,20000.0,20000.0,20000.0,20000.0,800.0,800.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Marvel Matrix Koregaon park,Central Pune,Premium,18.5362,73.8958,43.75,43.75,50.31,35000.0,35000.0,35000.0,35000.0,800.0,800.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Right Bhusari Kothrud,Central Pune,Grade B,18.5074,73.8077,21.0,21.0,24.15,21000.0,21000.0,21000.0,21000.0,1000.0,1000.0,1,Low,3.0,2.0,Real Property Listings,2026-02-07
+Sadashiv Peth,Central Pune,Grade A,18.5109,73.8516,30.6,29.09,35.2,19000.0,20000.0,12000.0,25000.0,682.0,620.0,5,Medium,1.4,1.2,Real Property Listings,2026-02-07
+Shivajinagar,Central Pune,Grade B,18.5304,73.8468,22.22,22.22,25.56,15000.0,15000.0,15000.0,15000.0,675.0,675.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+karvenagar,Central Pune,Grade B,18.5204,73.8567,15.38,15.38,17.69,9000.0,9000.0,9000.0,9000.0,585.0,585.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+kothrud,Central Pune,Grade A,18.5074,73.8077,36.48,36.48,41.95,35000.0,35000.0,25000.0,45000.0,952.5,952.5,2,Low,2.5,2.0,Real Property Listings,2026-02-07
+left bhusari colony Kothrud,Central Pune,Grade B,18.5074,73.8077,24.62,24.62,28.31,16000.0,16000.0,16000.0,16000.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Amanora Park Town Hadapsar,East Pune,Grade B,18.5089,73.926,23.53,23.53,27.06,20000.0,20000.0,20000.0,20000.0,850.0,850.0,1,Low,3.0,2.0,Real Property Listings,2026-02-07
+Amanora Park Town Hadapsar Pune,East Pune,Grade B,18.5089,73.926,18.05,18.05,20.75,24000.0,24000.0,24000.0,24000.0,1330.0,1330.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+HADAPSAR,East Pune,Grade B,18.5089,73.926,19.57,19.57,22.5,27000.0,27000.0,27000.0,27000.0,1380.0,1380.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Hadapsar,East Pune,Grade B,18.5089,73.926,20.54,19.39,23.62,18020.95,16000.0,7500.0,50000.0,926.2,764.0,91,High,1.9,1.9,Real Property Listings,2026-02-07
+Hadapsar Gaon,East Pune,Grade B,18.5089,73.926,18.46,19.01,21.23,12300.0,11000.0,9500.0,16500.0,675.8,570.0,5,Medium,1.4,1.4,Real Property Listings,2026-02-07
+Kalyani Nagar,East Pune,Grade A,18.5465,73.9062,30.41,28.89,34.97,30891.16,27000.0,13000.0,57000.0,1116.9,980.0,41,High,2.2,2.2,Real Property Listings,2026-02-07
+Kalyani Nagar Annexe,East Pune,Premium,18.5465,73.9062,40.62,40.62,46.72,40000.0,40000.0,25000.0,55000.0,950.0,950.0,2,Low,2.5,2.5,Real Property Listings,2026-02-07
+Kharadi,East Pune,Grade B,18.5515,73.9474,24.47,24.44,28.14,25851.99,25000.0,4000.0,65000.0,1074.54,986.0,85,High,2.1,2.1,Real Property Listings,2026-02-07
+Kharadi Annex,East Pune,Grade B,18.5515,73.9474,22.39,22.39,25.75,15000.0,15000.0,15000.0,15000.0,670.0,670.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kharadi.,East Pune,Grade B,18.5515,73.9474,24.49,24.49,28.16,12000.0,12000.0,12000.0,12000.0,490.0,490.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Lohegaon,East Pune,Grade B,18.5982,73.9282,15.56,15.28,17.89,10942.11,10500.0,4500.0,25000.0,709.0,658.5,38,High,1.5,1.5,Real Property Listings,2026-02-07
+Lohegaon Puri,East Pune,Grade B,18.5982,73.9282,15.0,15.0,17.25,7500.0,7500.0,7500.0,7500.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Lohegaon-Wagholi Road,East Pune,Grade C,18.5982,73.9282,11.78,11.78,13.55,10000.0,10000.0,10000.0,10000.0,849.0,849.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Lohegaon-dhanori road,East Pune,Grade C,18.5982,73.9282,13.08,13.08,15.04,8500.0,8500.0,8500.0,8500.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Magarpatta,East Pune,Grade A,18.5156,73.9295,27.9,25.0,32.09,21641.0,20000.0,10000.0,54000.0,850.25,800.0,39,High,1.9,1.9,Real Property Listings,2026-02-07
+Magarpatta City,East Pune,Grade A,18.5156,73.9295,26.17,26.17,30.09,15700.0,15700.0,15700.0,15700.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Mundhwa,East Pune,Grade B,18.5362,73.9318,20.77,20.0,23.88,20800.0,12000.0,10000.0,40000.0,1080.0,650.0,5,Medium,1.8,1.8,Real Property Listings,2026-02-07
+North Hadapsar,East Pune,Grade A,18.5089,73.926,32.32,34.5,37.17,18750.0,17000.0,14000.0,27000.0,637.5,475.0,4,Low,1.5,1.2,Real Property Listings,2026-02-07
+On Nagar Road Opposite Viman Nagar,East Pune,Grade B,18.5679,73.9143,17.86,17.86,20.54,25000.0,25000.0,25000.0,25000.0,1400.0,1400.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+S No 16/2/4/ Lohegaon Road,East Pune,Grade B,18.5982,73.9282,17.14,17.14,19.71,18000.0,18000.0,18000.0,18000.0,1050.0,1050.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+ST Nagar-Lohegaon,East Pune,Grade C,18.5982,73.9282,14.55,14.55,16.73,8000.0,8000.0,8000.0,8000.0,550.0,550.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Sharamik vasahat yerawada,East Pune,Grade B,18.5551,73.8817,22.22,22.22,25.56,10000.0,10000.0,10000.0,10000.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Viman Nagar,East Pune,Grade A,18.5679,73.9143,28.0,28.12,32.2,22041.67,20500.0,14000.0,36000.0,831.25,832.5,36,High,1.6,1.6,Real Property Listings,2026-02-07
+hadapsar,East Pune,Grade B,18.5089,73.926,17.07,17.07,19.63,9450.0,9450.0,9000.0,9900.0,555.0,555.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+kalyani nagar,East Pune,Premium,18.5465,73.9062,45.07,45.07,51.83,32000.0,32000.0,32000.0,32000.0,710.0,710.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+kalyani nagar extention,East Pune,Grade A,18.5465,73.9062,38.24,38.24,43.97,65000.0,65000.0,65000.0,65000.0,1700.0,1700.0,1,Low,4.0,4.0,Real Property Listings,2026-02-07
+kharadi,East Pune,Grade B,18.5515,73.9474,16.67,16.67,19.17,10500.0,10500.0,10500.0,10500.0,630.0,630.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Akurdi,PCMC,Grade B,18.6476,73.7654,21.26,18.05,24.45,14950.0,16000.0,7500.0,20000.0,735.2,705.0,10,High,1.8,1.7,Real Property Listings,2026-02-07
+Akurdi Railway Stations,PCMC,Grade B,18.6476,73.7654,20.0,20.0,23.0,11000.0,11000.0,11000.0,11000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Chinchwad,PCMC,Grade B,18.6479,73.7972,21.53,20.88,24.76,16081.82,13250.0,8500.0,32000.0,747.05,650.0,22,High,1.5,1.5,Real Property Listings,2026-02-07
+Chinchwad Gaon,PCMC,Grade B,18.6479,73.7972,18.74,19.35,21.55,11625.0,11000.0,9500.0,15000.0,646.25,642.5,4,Low,1.5,1.5,Real Property Listings,2026-02-07
+Nigdi,PCMC,Grade B,18.6543,73.7702,18.49,18.33,21.27,14400.0,16000.0,11000.0,16000.0,790.0,750.0,5,Medium,1.8,1.8,Real Property Listings,2026-02-07
+PIMPLE GARAV,PCMC,Grade B,18.5204,73.8567,17.27,17.27,19.86,9500.0,9500.0,9500.0,9500.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Pimple Gurav,PCMC,Grade B,18.5204,73.8567,19.06,18.18,21.92,13538.0,12000.0,3500.0,25000.0,703.28,650.0,25,High,1.4,1.6,Real Property Listings,2026-02-07
+Pimple Nilakh,PCMC,Grade A,18.5204,73.8567,30.12,25.71,34.63,33185.6,22000.0,7500.0,77000.0,1365.46,1002.0,23,High,2.7,2.6,Real Property Listings,2026-02-07
+Pimple Saudagar,PCMC,Grade B,18.5966,73.8023,22.15,21.21,25.48,19737.07,19000.0,12000.0,30000.0,922.74,900.0,58,High,2.0,2.1,Real Property Listings,2026-02-07
+Pimpri,PCMC,Grade B,18.6298,73.8009,23.13,21.0,26.6,16357.14,16000.0,10000.0,25000.0,718.71,650.0,7,Medium,1.7,1.7,Real Property Listings,2026-02-07
+Pimpri Chinchwad,PCMC,Grade B,18.6298,73.8009,22.51,20.66,25.88,16571.43,14500.0,10500.0,28000.0,734.14,684.0,14,High,1.6,1.6,Real Property Listings,2026-02-07
+Ravet,PCMC,Grade B,18.6542,73.7372,20.24,19.72,23.28,13833.33,14000.0,7000.0,18000.0,707.73,667.5,48,High,1.7,1.8,Real Property Listings,2026-02-07
+SECTOR 32A RAVET PRADHIKARAN,PCMC,Grade B,18.6542,73.7372,19.35,19.35,22.26,12000.0,12000.0,12000.0,12000.0,620.0,620.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sainathnagar Nigdi,PCMC,Grade B,18.6543,73.7702,17.27,17.27,19.86,9500.0,9500.0,9500.0,9500.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sector-29 Ravet,PCMC,Grade B,18.6542,73.7372,18.09,18.67,20.8,15333.33,14000.0,14000.0,18000.0,847.0,840.0,3,Low,2.0,2.0,Real Property Listings,2026-02-07
+Thergaon,PCMC,Grade B,18.61,73.79,21.12,20.0,24.28,15214.29,15500.0,12000.0,20000.0,742.43,771.5,14,High,1.6,1.6,Real Property Listings,2026-02-07
+Vallabhnagar Pimpri Pune,PCMC,Grade B,18.6298,73.8009,21.67,21.67,24.92,13000.0,13000.0,13000.0,13000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+pimple Saudagar,PCMC,Grade B,18.5966,73.8023,22.86,22.86,26.29,20000.0,20000.0,20000.0,20000.0,875.0,875.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+pimpri,PCMC,Grade C,18.6298,73.8009,14.0,14.0,16.1,14000.0,14000.0,14000.0,14000.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+ravet kiwle,PCMC,Grade C,18.6542,73.7372,14.62,14.62,16.81,9500.0,9500.0,9500.0,9500.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+,Pune,Grade B,18.5304,73.8468,19.51,17.5,22.43,13058.78,10000.0,4000.0,75000.0,687.67,599.0,131,High,1.4,1.3,Real Property Listings,2026-02-07
+25 Sector,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,15000.0,15000.0,15000.0,15000.0,750.0,750.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+60 Feet Road,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,14000.0,14000.0,14000.0,14000.0,840.0,840.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+A WING,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,10000.0,10000.0,10000.0,10000.0,750.0,750.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+ABHIRUCHI MALL,Pune,Grade B,18.5204,73.8567,17.0,17.0,19.55,8500.0,8500.0,8500.0,8500.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Abasaheb Raikar Nagar,Pune,Grade B,18.5204,73.8567,16.99,16.99,19.54,13000.0,13000.0,13000.0,13000.0,765.0,765.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Adarsh Colony,Pune,Grade B,18.5204,73.8567,24.29,24.29,27.93,17000.0,17000.0,17000.0,17000.0,700.0,700.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Adarsh Nagar,Pune,Grade A,18.5204,73.8567,26.02,26.02,29.92,16000.0,16000.0,16000.0,16000.0,615.0,615.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Aditya Greens,Pune,Grade B,18.5204,73.8567,19.14,19.14,22.01,6000.0,6000.0,5000.0,7000.0,314.5,314.5,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Airport Road,Pune,Grade B,18.5204,73.8567,21.67,21.67,24.92,6500.0,6500.0,6500.0,6500.0,300.0,300.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Alandi,Pune,Grade B,18.5204,73.8567,15.31,16.03,17.61,7125.0,7250.0,4000.0,10000.0,492.0,525.0,4,Low,1.2,1.2,Real Property Listings,2026-02-07
+Amanora Town Ship,Pune,Grade B,18.5204,73.8567,22.11,22.11,25.42,21000.0,21000.0,21000.0,21000.0,950.0,950.0,1,Low,3.0,2.0,Real Property Listings,2026-02-07
+Amanora town ship,Pune,Grade B,18.5204,73.8567,22.56,22.56,25.94,23000.0,23000.0,23000.0,23000.0,1025.0,1025.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Ambedkar Nagar,Pune,Grade B,18.5204,73.8567,18.33,18.33,21.08,11000.0,11000.0,11000.0,11000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Ambegaon,Pune,Grade B,18.5204,73.8567,17.16,16.0,19.73,13312.5,13500.0,6500.0,20000.0,816.25,750.0,8,Medium,1.8,1.8,Real Property Listings,2026-02-07
+Ambegaon Bk,Pune,Grade B,18.5204,73.8567,15.95,15.49,18.34,10740.0,10500.0,5000.0,18000.0,685.1,633.5,10,High,1.6,1.4,Real Property Listings,2026-02-07
+Ambegaon Budruk,Pune,Grade B,18.5204,73.8567,15.95,13.62,18.34,10125.0,10250.0,4500.0,15000.0,703.12,756.0,8,Medium,1.8,1.5,Real Property Listings,2026-02-07
+Ambegaon Kh,Pune,Grade C,18.5204,73.8567,10.26,10.26,11.79,6000.0,6000.0,6000.0,6000.0,585.0,585.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Ambegaon Pathar,Pune,Grade C,18.5204,73.8567,12.55,14.67,14.43,7666.67,7500.0,4500.0,11000.0,602.33,550.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Ambegaon budruk,Pune,Grade B,18.5204,73.8567,22.0,22.0,25.3,5500.0,5500.0,5500.0,5500.0,250.0,250.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Anand Nagar,Pune,Grade B,18.5204,73.8567,18.76,16.97,21.58,11700.0,10250.0,8000.0,19000.0,658.0,665.0,10,High,1.5,1.3,Real Property Listings,2026-02-07
+Arrena29,Pune,Grade A,18.5204,73.8567,28.57,28.57,32.86,20000.0,20000.0,20000.0,20000.0,700.0,700.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Arvind Colony,Pune,Grade A,18.5204,73.8567,29.85,29.85,34.33,20000.0,20000.0,20000.0,20000.0,670.0,670.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Ashoka Nagar,Pune,Grade B,18.5204,73.8567,24.59,25.58,28.27,23416.67,22500.0,22000.0,28000.0,976.67,860.0,6,Medium,2.2,2.2,Real Property Listings,2026-02-07
+Ashoknagar Rangehills,Pune,Grade A,18.5204,73.8567,25.45,25.45,29.27,28000.0,28000.0,28000.0,28000.0,1100.0,1100.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Astha,Pune,Grade A,18.5204,73.8567,30.77,30.77,35.38,40000.0,40000.0,40000.0,40000.0,1300.0,1300.0,1,Low,4.0,3.0,Real Property Listings,2026-02-07
+Autadwadi Handewadi,Pune,Grade B,18.5204,73.8567,24.03,24.03,27.63,18500.0,18500.0,18500.0,18500.0,770.0,770.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Awhalwadi,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,6000.0,6000.0,6000.0,6000.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+B. T. Kawade Road,Pune,Grade B,18.5204,73.8567,24.32,24.32,27.96,24000.0,24000.0,24000.0,24000.0,987.0,987.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+B.T Kawade Road,Pune,Grade B,18.5204,73.8567,22.07,22.5,25.38,18333.33,18000.0,13000.0,24000.0,820.0,800.0,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+BEHIND HOTEL KINARA,Pune,Grade A,18.5204,73.8567,29.09,29.09,33.45,16000.0,16000.0,16000.0,16000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Badhan Nagar,Pune,Grade B,18.5204,73.8567,17.39,17.39,20.0,16000.0,16000.0,16000.0,16000.0,920.0,920.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Baif road Wagholi,Pune,Grade C,18.5204,73.8567,14.17,14.17,16.29,8500.0,8500.0,8500.0,8500.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Balaji Nagar,Pune,Grade C,18.5204,73.8567,13.25,13.25,15.23,7750.0,7750.0,7500.0,8000.0,585.0,585.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Balajinagar,Pune,Grade B,18.5204,73.8567,22.03,22.03,25.34,13000.0,13000.0,13000.0,13000.0,590.0,590.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Baliraj Colony,Pune,Grade A,18.5204,73.8567,27.59,27.59,31.72,12000.0,12000.0,12000.0,12000.0,435.0,435.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bapdev Nagar,Pune,Grade B,18.5204,73.8567,15.71,15.71,18.07,11000.0,11000.0,11000.0,11000.0,700.0,700.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Barlota Nagar,Pune,Grade C,18.5204,73.8567,11.54,11.54,13.27,6000.0,6000.0,6000.0,6000.0,520.0,520.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bebadohal,Pune,Grade B,18.5204,73.8567,15.31,15.31,17.6,6000.0,6000.0,6000.0,6000.0,392.0,392.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Behind Kahdki Railway Station,Pune,Grade A,18.5204,73.8567,28.64,28.64,32.93,25000.0,25000.0,25000.0,25000.0,873.0,873.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Behind PCMC building,Pune,Grade A,18.5204,73.8567,25.45,25.45,29.27,14000.0,14000.0,14000.0,14000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Behind suraydatta collage,Pune,Grade B,18.5204,73.8567,16.32,16.32,18.76,15500.0,15500.0,15500.0,15500.0,950.0,950.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Bekrai Nagar,Pune,Grade C,18.5204,73.8567,10.0,10.0,11.5,4500.0,4500.0,4500.0,4500.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bellagio,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,18000.0,18000.0,18000.0,18000.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Benkar Nagar,Pune,Grade C,18.5204,73.8567,12.5,12.5,14.37,6000.0,6000.0,6000.0,6000.0,480.0,480.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bhageerath,Pune,Grade B,18.5204,73.8567,24.35,24.35,28.0,28000.0,28000.0,28000.0,28000.0,1150.0,1150.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Bhagyodhya Nagar,Pune,Grade B,18.5204,73.8567,15.71,15.71,18.07,5500.0,5500.0,5500.0,5500.0,350.0,350.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Bhairav Nagar,Pune,Grade B,18.5204,73.8567,19.64,19.64,22.58,7500.0,7500.0,5500.0,9500.0,400.0,400.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bhandarkar Road,Pune,Grade A,18.5204,73.8567,31.59,31.59,36.33,42500.0,42500.0,35000.0,50000.0,1335.0,1335.0,2,Low,3.0,3.0,Real Property Listings,2026-02-07
+Bharati Vidyapeeth,Pune,Grade B,18.5204,73.8567,16.31,16.31,18.76,15250.0,15250.0,12000.0,18500.0,925.0,925.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Bhausaheb Kalate Nagar,Pune,Grade A,18.5204,73.8567,25.78,25.78,29.64,16000.0,16000.0,16000.0,16000.0,725.0,725.0,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Bhawani Peth,Pune,Grade A,18.5204,73.8567,27.17,25.0,31.24,18333.33,18000.0,17000.0,20000.0,700.0,800.0,3,Low,1.7,1.3,Real Property Listings,2026-02-07
+Bhekrai Nagar,Pune,Grade C,18.5204,73.8567,12.74,11.21,14.65,8307.69,7000.0,6000.0,17000.0,655.94,600.0,13,High,1.4,1.2,Real Property Listings,2026-02-07
+Bhoir Colony,Pune,Grade B,18.5204,73.8567,17.54,17.54,20.18,10000.0,10000.0,10000.0,10000.0,570.0,570.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bhoirwadi,Pune,Grade B,18.5204,73.8567,18.0,18.0,20.7,11000.0,11000.0,11000.0,11000.0,611.0,611.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bhosale Nagar,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,25000.0,25000.0,25000.0,25000.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Bhosari,Pune,Grade C,18.5204,73.8567,13.44,13.52,15.45,9750.0,9250.0,8500.0,12000.0,726.75,706.5,4,Low,1.5,1.2,Real Property Listings,2026-02-07
+Bhugaon,Pune,Grade B,18.5204,73.8567,16.11,15.86,18.53,11417.08,10750.0,5500.0,20000.0,745.75,674.5,12,High,1.6,1.6,Real Property Listings,2026-02-07
+Bhujbal Vasti,Pune,Grade B,18.5204,73.8567,18.75,18.75,21.56,15000.0,15000.0,15000.0,15000.0,800.0,800.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Bhukum,Pune,Grade B,18.5204,73.8567,18.67,20.0,21.47,11000.0,11000.0,10000.0,12000.0,600.0,555.0,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+Bhumkar Nagar,Pune,Grade B,18.5204,73.8567,19.0,19.1,21.84,16683.33,15050.0,12000.0,25000.0,880.0,835.0,6,Medium,1.8,1.8,Real Property Listings,2026-02-07
+Bhunde Vasti,Pune,Grade B,18.5204,73.8567,23.67,23.67,27.23,25000.0,25000.0,25000.0,25000.0,1056.0,1056.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Bhusari Colony,Pune,Grade B,18.5204,73.8567,24.22,24.91,27.86,18771.43,17500.0,13000.0,30000.0,796.79,767.5,14,High,1.6,1.6,Real Property Listings,2026-02-07
+Bhusari colony,Pune,Grade A,18.5204,73.8567,33.85,33.85,38.92,22000.0,22000.0,22000.0,22000.0,650.0,650.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Bibwewadi,Pune,Grade B,18.5204,73.8567,22.33,21.67,25.68,13764.71,12500.0,8000.0,23000.0,615.18,600.0,17,High,1.3,1.3,Real Property Listings,2026-02-07
+Bibwewadi Annex,Pune,Grade B,18.5204,73.8567,23.36,23.36,26.87,18000.0,18000.0,18000.0,18000.0,770.48,770.48,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Bijali Nagar,Pune,Grade B,18.5204,73.8567,17.71,17.71,20.36,8500.0,8500.0,8500.0,8500.0,480.0,480.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bijle Nagar,Pune,Grade B,18.5204,73.8567,18.84,18.84,21.67,13000.0,13000.0,13000.0,13000.0,690.0,690.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Bijlinagar,Pune,Grade B,18.5204,73.8567,23.08,23.08,26.54,6000.0,6000.0,6000.0,6000.0,260.0,260.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Boat Club Road,Pune,Grade B,18.5204,73.8567,24.14,24.14,27.76,35000.0,35000.0,35000.0,35000.0,1450.0,1450.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Bopkhel,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,9000.0,9000.0,6000.0,12000.0,525.0,525.0,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Bopodi,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,17500.0,17500.0,17500.0,17500.0,700.0,700.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Borhade Wadi,Pune,Grade B,18.5204,73.8567,18.57,18.57,21.36,10750.0,10750.0,9000.0,12500.0,575.0,575.0,2,Low,1.5,2.0,Real Property Listings,2026-02-07
+Budhwar Peth,Pune,Premium,18.5204,73.8567,40.0,40.0,46.0,20000.0,20000.0,20000.0,20000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Bund Garden,Pune,Grade A,18.5204,73.8567,31.77,34.68,36.53,25250.0,26000.0,5000.0,44000.0,756.25,737.5,4,Low,1.8,1.5,Real Property Listings,2026-02-07
+CONVENT STREET,Pune,Grade A,18.5204,73.8567,27.59,27.59,31.73,25000.0,25000.0,25000.0,25000.0,906.0,906.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Chadannagara,Pune,Grade B,18.5204,73.8567,17.69,17.69,20.35,11500.0,11500.0,11500.0,11500.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Chakan,Pune,Grade C,18.5204,73.8567,14.78,14.66,17.0,8062.5,7750.0,4000.0,12500.0,565.88,570.0,8,Medium,1.8,1.5,Real Property Listings,2026-02-07
+Chandan Nagar,Pune,Grade B,18.5204,73.8567,15.94,18.0,18.33,10250.0,8000.0,2500.0,18500.0,608.33,500.0,6,Medium,1.3,1.3,Real Property Listings,2026-02-07
+Chandani Chowk,Pune,Grade C,18.5204,73.8567,14.62,14.62,16.81,19000.0,19000.0,19000.0,19000.0,1300.0,1300.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Chandanngar,Pune,Grade B,18.5204,73.8567,24.0,24.0,27.6,12000.0,12000.0,12000.0,12000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Charholi,Pune,Grade B,18.5204,73.8567,16.51,16.62,18.99,9375.0,8750.0,8000.0,12000.0,573.75,580.0,4,Low,1.5,1.5,Real Property Listings,2026-02-07
+Charholi Budruk,Pune,Grade C,18.5204,73.8567,13.08,13.08,15.04,8500.0,8500.0,8500.0,8500.0,650.0,650.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Charholi Kurd,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,12000.0,12000.0,12000.0,12000.0,480.0,480.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Chavannagar,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,10000.0,10000.0,10000.0,10000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Chikhali,Pune,Grade B,18.5204,73.8567,16.94,17.02,19.48,11138.89,10750.0,8000.0,16000.0,678.5,624.0,18,High,1.6,1.6,Real Property Listings,2026-02-07
+Chikhali Dehu alandi road,Pune,Grade C,18.5204,73.8567,13.77,13.77,15.84,15000.0,15000.0,15000.0,15000.0,1089.0,1089.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Chikhli pune,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,10000.0,10000.0,10000.0,10000.0,750.0,750.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Chikkalvadi,Pune,Grade B,18.5204,73.8567,23.33,23.33,26.83,21000.0,21000.0,21000.0,21000.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Clover Park,Pune,Grade A,18.5204,73.8567,31.17,29.58,35.85,15416.67,15000.0,10000.0,20000.0,493.33,490.0,6,Medium,1.2,1.0,Real Property Listings,2026-02-07
+Colony no.1 Shivraj nagar rahatani,Pune,Grade A,18.5204,73.8567,26.47,26.47,30.44,13500.0,13500.0,13500.0,13500.0,510.0,510.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+D. Y. Patil College Road,Pune,Grade C,18.5204,73.8567,10.67,10.67,12.27,16000.0,16000.0,16000.0,16000.0,1500.0,1500.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Daffodils building,Pune,Grade A,18.5204,73.8567,26.67,26.67,30.67,24000.0,24000.0,24000.0,24000.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Dahanukar Colony,Pune,Grade A,18.5204,73.8567,28.87,25.0,33.2,19800.0,15000.0,15000.0,31000.0,672.4,606.0,5,Medium,1.6,1.6,Real Property Listings,2026-02-07
+Dangat Patil Nagar,Pune,Grade C,18.5204,73.8567,9.96,9.96,11.46,8500.0,8500.0,8500.0,8500.0,853.0,853.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Dange Chowk,Pune,Grade B,18.5204,73.8567,21.52,21.37,24.75,16900.0,18250.0,8500.0,22000.0,789.4,836.5,10,High,2.0,2.0,Real Property Listings,2026-02-07
+Dapodi,Pune,Grade B,18.5204,73.8567,23.78,24.59,27.35,13600.0,13000.0,10000.0,17000.0,593.0,600.0,5,Medium,1.2,1.2,Real Property Listings,2026-02-07
+Dasar,Pune,Grade A,18.5204,73.8567,26.4,26.4,30.36,14679.0,14679.0,14679.0,14679.0,556.0,556.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Datta Mandir Road,Pune,Grade B,18.5204,73.8567,17.91,17.91,20.6,24000.0,24000.0,24000.0,24000.0,1340.0,1340.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Datta Mandir road,Pune,Grade B,18.5204,73.8567,24.0,24.0,27.6,24000.0,24000.0,24000.0,24000.0,1000.0,1000.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Dattanagar,Pune,Grade B,18.5204,73.8567,16.42,18.0,18.88,11600.0,12000.0,4800.0,18000.0,675.0,650.0,3,Low,1.7,1.3,Real Property Listings,2026-02-07
+Dattawadi Sinhgad road,Pune,Grade B,18.5204,73.8567,22.86,22.86,26.29,16000.0,16000.0,16000.0,16000.0,700.0,700.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Dehu,Pune,Grade C,18.5204,73.8567,12.12,12.12,13.93,4500.0,4500.0,3000.0,6000.0,425.0,425.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Dehu Road,Pune,Grade B,18.5204,73.8567,16.48,16.48,18.96,9000.0,9000.0,9000.0,9000.0,546.0,546.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Dehuroad,Pune,Grade B,18.5204,73.8567,15.45,15.45,17.77,8500.0,8500.0,8500.0,8500.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Dhankawdi,Pune,Grade C,18.5204,73.8567,10.0,10.0,11.5,10000.0,10000.0,10000.0,10000.0,1000.0,1000.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Dhanori,Pune,Grade B,18.5204,73.8567,20.42,20.26,23.49,15588.24,15000.0,7000.0,32500.0,789.26,750.0,34,High,1.8,1.8,Real Property Listings,2026-02-07
+Dhanvantari Colony,Pune,Grade B,18.5204,73.8567,16.25,16.25,18.69,6500.0,6500.0,6500.0,6500.0,400.0,400.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Dhayari,Pune,Grade C,18.5204,73.8567,14.93,14.53,17.16,9357.14,8500.0,7000.0,15000.0,650.21,590.0,14,High,1.5,1.3,Real Property Listings,2026-02-07
+Dhayari Phata,Pune,Grade B,18.5204,73.8567,18.57,17.34,21.36,14500.0,13500.0,12000.0,18000.0,780.67,800.0,3,Low,2.0,2.0,Real Property Listings,2026-02-07
+Digambar Nagar,Pune,Grade B,18.5204,73.8567,21.67,21.67,24.92,26000.0,26000.0,26000.0,26000.0,1200.0,1200.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Dighi,Pune,Grade B,18.5204,73.8567,17.21,16.24,19.79,10312.5,10250.0,6000.0,15000.0,610.22,616.25,16,High,1.3,1.4,Real Property Listings,2026-02-07
+Dudhane Nagar,Pune,Grade B,18.5204,73.8567,21.82,21.82,25.09,12000.0,12000.0,12000.0,12000.0,550.0,550.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Dutt Mandir Road,Pune,Grade B,18.5204,73.8567,18.5,18.5,21.28,18500.0,18500.0,18500.0,18500.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Eklavya Colony,Pune,Grade A,18.5204,73.8567,27.5,27.5,31.62,27500.0,27500.0,27500.0,27500.0,1000.0,1000.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Eknath Pathare Vasti,Pune,Grade B,18.5204,73.8567,21.82,21.82,25.09,24000.0,24000.0,24000.0,24000.0,1100.0,1100.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Eon Free Zone,Pune,Grade A,18.5204,73.8567,25.83,26.28,29.71,21630.43,22000.0,10000.0,34000.0,882.0,950.0,23,High,1.9,2.0,Real Property Listings,2026-02-07
+F C Road,Pune,Grade A,18.5204,73.8567,28.38,28.38,32.64,23000.0,23000.0,20000.0,26000.0,825.0,825.0,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Fatima Nagar,Pune,Grade A,18.5204,73.8567,25.95,21.67,29.84,21125.0,18000.0,8500.0,40000.0,900.5,701.0,4,Low,2.0,1.8,Real Property Listings,2026-02-07
+Flat No.303,Pune,Grade C,18.5204,73.8567,11.54,11.54,13.27,6000.0,6000.0,6000.0,6000.0,520.0,520.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Fursungi Gaon,Pune,Grade B,18.5204,73.8567,23.62,25.74,27.16,11000.0,10000.0,10000.0,13000.0,490.0,505.0,3,Low,1.3,1.3,Real Property Listings,2026-02-07
+Gahunje,Pune,Grade A,18.5204,73.8567,25.56,25.56,29.39,14000.0,14000.0,14000.0,14000.0,575.0,575.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Gaikwad Vasti,Pune,Grade B,18.5204,73.8567,21.02,21.02,24.17,12000.0,12000.0,12000.0,12000.0,571.0,571.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Gandhi Peth,Pune,Grade B,18.5204,73.8567,18.18,18.18,20.91,12000.0,12000.0,12000.0,12000.0,660.0,660.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Ganesh Nagar,Pune,Grade B,18.5204,73.8567,24.71,24.44,28.41,18100.0,18000.0,11000.0,27000.0,742.0,625.0,5,Medium,1.4,1.6,Real Property Listings,2026-02-07
+Ganesh Peth,Pune,Grade A,18.5204,73.8567,25.62,25.62,29.47,14500.0,14500.0,12000.0,17000.0,600.0,600.0,2,Low,1.5,1.0,Real Property Listings,2026-02-07
+Ganesh baug Temple,Pune,Grade B,18.5204,73.8567,21.14,21.14,24.31,13000.0,13000.0,13000.0,13000.0,615.0,615.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Ganga Nagar,Pune,Grade B,18.5204,73.8567,17.02,17.02,19.58,9750.0,9750.0,6500.0,13000.0,612.5,612.5,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Gangarde Nagar,Pune,Grade B,18.5204,73.8567,23.64,23.64,27.18,13000.0,13000.0,13000.0,13000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gangarde Nagar 1,Pune,Grade B,18.5204,73.8567,16.0,16.0,18.4,12000.0,12000.0,12000.0,12000.0,750.0,750.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gangotri Nagar,Pune,Grade A,18.5204,73.8567,27.5,27.5,31.62,5500.0,5500.0,5500.0,5500.0,200.0,200.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Ghorpadi,Pune,Grade B,18.5204,73.8567,21.31,19.0,24.5,14500.0,15000.0,12000.0,16000.0,731.25,687.5,4,Low,1.2,1.8,Real Property Listings,2026-02-07
+Ghotawade Phata,Pune,Grade C,18.5204,73.8567,7.97,7.97,9.17,5500.0,5500.0,5500.0,5500.0,690.0,690.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Giridhar Nagar,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,6500.0,6500.0,6500.0,6500.0,325.0,325.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gk Royal Rahadki Near Kalewadi Phata,Pune,Grade A,18.5204,73.8567,33.13,33.13,38.1,16000.0,16000.0,16000.0,16000.0,483.0,483.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Gokhale Nagar,Pune,Grade B,18.5204,73.8567,23.08,23.08,26.54,15000.0,15000.0,15000.0,15000.0,650.0,650.0,2,Low,2.0,1.0,Real Property Listings,2026-02-07
+Gokul Colony,Pune,Grade B,18.5204,73.8567,15.27,15.27,17.56,12000.0,12000.0,12000.0,12000.0,786.0,786.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Gokul Nagar,Pune,Grade B,18.5204,73.8567,22.0,22.0,25.3,11000.0,11000.0,11000.0,11000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gondhale Nagar,Pune,Grade C,18.5204,73.8567,13.88,14.29,15.97,7666.67,8500.0,5500.0,9000.0,548.33,550.0,3,Low,1.3,1.0,Real Property Listings,2026-02-07
+Gujarat Colony,Pune,Grade A,18.5204,73.8567,36.67,36.67,42.17,11000.0,11000.0,11000.0,11000.0,300.0,300.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gujrat Colony,Pune,Grade A,18.5204,73.8567,34.95,34.95,40.19,18000.0,18000.0,18000.0,18000.0,515.0,515.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gulab Nagar,Pune,Grade B,18.5204,73.8567,19.05,19.05,21.9,8000.0,8000.0,6000.0,10000.0,440.0,440.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gulmohar Apts,Pune,Grade B,18.5204,73.8567,23.38,23.38,26.88,9000.0,9000.0,9000.0,9000.0,385.0,385.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gultekadi,Pune,Grade A,18.5204,73.8567,30.0,30.0,34.5,12000.0,12000.0,12000.0,12000.0,400.0,400.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Gurha Slathia,Pune,Grade B,18.5204,73.8567,18.18,18.18,20.91,10000.0,10000.0,10000.0,10000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Guruvar Peth,Pune,Grade B,18.5204,73.8567,21.29,21.29,24.49,14250.0,14250.0,11000.0,17500.0,675.0,675.0,2,Low,2.5,1.5,Real Property Listings,2026-02-07
+Handewadi,Pune,Grade C,18.5204,73.8567,14.4,13.98,16.56,10650.0,11000.0,6000.0,15000.0,754.0,837.5,10,High,1.7,1.7,Real Property Listings,2026-02-07
+Handewadi road,Pune,Grade B,18.5204,73.8567,19.31,19.31,22.21,14000.0,14000.0,14000.0,14000.0,725.0,725.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Hanuman Nagar,Pune,Grade B,18.5204,73.8567,24.0,24.04,27.6,16083.33,16750.0,8000.0,20000.0,668.33,725.0,6,Medium,1.7,1.7,Real Property Listings,2026-02-07
+Hingane Home Colony,Pune,Grade B,18.5204,73.8567,22.22,22.22,25.56,13000.0,13000.0,13000.0,13000.0,585.0,585.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+IVy Estate,Pune,Grade C,18.5204,73.8567,14.17,14.17,16.29,8500.0,8500.0,8500.0,8500.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Ideal Colony,Pune,Grade A,18.5204,73.8567,33.03,33.03,37.99,18500.0,18500.0,15000.0,22000.0,555.0,555.0,2,Low,1.0,1.5,Real Property Listings,2026-02-07
+Ingle Nagar,Pune,Grade B,18.5204,73.8567,22.94,22.94,26.38,17500.0,17500.0,17500.0,17500.0,763.0,763.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Ivy Estate,Pune,Grade B,18.5204,73.8567,16.47,16.47,18.94,14000.0,14000.0,14000.0,14000.0,850.0,850.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Jadhav Wadi,Pune,Grade C,18.5204,73.8567,12.8,12.8,14.72,8000.0,8000.0,8000.0,8000.0,625.0,625.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Jadhav wadi,Pune,Grade C,18.5204,73.8567,14.71,14.71,16.91,12500.0,12500.0,12500.0,12500.0,850.0,850.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Jagtap Dairy,Pune,Grade B,18.5204,73.8567,18.0,18.0,20.7,9000.0,9000.0,9000.0,9000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Jai Bhavani Nagar,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,24005.0,24005.0,24005.0,24005.0,1200.0,1200.0,1,Low,3.0,2.0,Real Property Listings,2026-02-07
+Jambhulkar Mala,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,12500.0,12500.0,12500.0,12500.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Jawakar Nagar,Pune,Grade A,18.5204,73.8567,29.17,29.17,33.54,17500.0,17500.0,17500.0,17500.0,600.0,600.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Jyotiba Colony,Pune,Grade B,18.5204,73.8567,20.05,25.0,23.06,15500.0,13000.0,12500.0,21000.0,871.67,840.0,3,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kad Nagar,Pune,Grade C,18.5204,73.8567,14.0,14.0,16.1,14000.0,14000.0,14000.0,14000.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kalanagar,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,10000.0,10000.0,10000.0,10000.0,400.0,400.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kalas,Pune,Grade B,18.5204,73.8567,22.33,20.83,25.68,13833.33,12500.0,7500.0,21500.0,596.67,600.0,3,Low,1.7,1.3,Real Property Listings,2026-02-07
+Kale Padal,Pune,Grade B,18.5204,73.8567,18.03,17.78,20.74,9583.33,9000.0,8000.0,13000.0,533.33,500.0,6,Medium,1.3,1.3,Real Property Listings,2026-02-07
+Kaleborate Nagar,Pune,Grade C,18.5204,73.8567,12.07,12.07,13.88,7000.0,7000.0,7000.0,7000.0,580.0,580.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kalepadal,Pune,Grade C,18.5204,73.8567,13.42,13.42,15.43,9500.0,9500.0,5000.0,14000.0,669.5,669.5,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Kalewadi,Pune,Grade B,18.5204,73.8567,17.35,17.37,19.96,11700.0,11000.0,7000.0,16500.0,686.0,700.0,5,Medium,1.4,1.4,Real Property Listings,2026-02-07
+Kalewadi Phata,Pune,Grade B,18.5204,73.8567,17.69,17.69,20.35,9200.0,9200.0,9200.0,9200.0,520.0,520.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kamgar Nagar,Pune,Grade B,18.5204,73.8567,22.61,22.61,26.0,13000.0,13000.0,13000.0,13000.0,575.0,575.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kanhe,Pune,Grade C,18.5204,73.8567,12.83,12.83,14.76,5500.0,5500.0,3000.0,8000.0,475.0,475.0,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Karan Ashiyana CHS,Pune,Grade A,18.5204,73.8567,38.33,38.33,44.08,23000.0,23000.0,23000.0,23000.0,600.0,600.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Karpe Nagar,Pune,Grade B,18.5204,73.8567,17.86,17.86,20.54,20000.0,20000.0,20000.0,20000.0,1120.0,1120.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kasar Amboli,Pune,Grade C,18.5204,73.8567,13.41,11.43,15.42,8666.67,8000.0,8000.0,10000.0,684.92,700.0,3,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kasarsai,Pune,Grade C,18.5204,73.8567,11.11,11.11,12.78,8500.0,8500.0,8500.0,8500.0,765.0,765.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kasarwadi,Pune,Grade B,18.5204,73.8567,19.11,19.11,21.98,15500.0,15500.0,15000.0,16000.0,831.5,831.5,2,Low,2.0,1.5,Real Property Listings,2026-02-07
+Kasba Peth,Pune,Grade B,18.5204,73.8567,23.51,23.51,27.04,22500.0,22500.0,22000.0,23000.0,1025.0,1025.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kashid Nagar,Pune,Grade B,18.5204,73.8567,24.81,24.81,28.53,16000.0,16000.0,16000.0,16000.0,645.0,645.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kashid Park,Pune,Grade B,18.5204,73.8567,19.43,19.43,22.34,17000.0,17000.0,17000.0,17000.0,875.0,875.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kaspate Vasti,Pune,Grade B,18.5204,73.8567,23.35,22.73,26.85,18770.59,18000.0,11100.0,27000.0,838.59,810.0,17,High,2.0,1.9,Real Property Listings,2026-02-07
+Kasptewasti,Pune,Grade B,18.5204,73.8567,16.15,16.15,18.58,10500.0,10500.0,10500.0,10500.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kasurdi,Pune,Premium,18.5204,73.8567,107.64,107.64,123.79,5000.0,5000.0,5000.0,5000.0,46.45,46.45,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kate Wasti,Pune,Grade B,18.5204,73.8567,17.35,17.35,19.95,17000.0,17000.0,17000.0,17000.0,980.0,980.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Katey Basti,Pune,Grade B,18.5204,73.8567,23.53,23.53,27.06,24000.0,24000.0,24000.0,24000.0,1020.0,1020.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kausar Baug,Pune,Grade B,18.5204,73.8567,22.09,22.09,25.41,19000.0,19000.0,19000.0,19000.0,860.0,860.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kedari Nagar,Pune,Grade B,18.5204,73.8567,20.34,20.34,23.39,30000.0,30000.0,30000.0,30000.0,1475.0,1475.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Kemse Vasti,Pune,Grade A,18.5204,73.8567,25.54,25.54,29.38,13500.0,13500.0,13000.0,14000.0,530.0,530.0,2,Low,1.0,1.5,Real Property Listings,2026-02-07
+Keshav Nagar,Pune,Grade B,18.5204,73.8567,23.16,24.0,26.63,18290.7,18000.0,4100.0,39000.0,813.39,714.0,43,High,1.9,1.8,Real Property Listings,2026-02-07
+Keshav nagar,Pune,Grade B,18.5204,73.8567,18.69,18.69,21.5,10000.0,10000.0,10000.0,10000.0,535.0,535.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Keshavnagar,Pune,Grade A,18.5204,73.8567,26.61,26.61,30.6,19000.0,19000.0,19000.0,19000.0,714.0,714.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Keshvnagar,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,20000.0,20000.0,20000.0,20000.0,800.0,800.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kesnand,Pune,Grade C,18.5204,73.8567,12.9,13.15,14.83,6750.0,7250.0,3500.0,9000.0,532.75,585.0,4,Low,1.2,1.2,Real Property Listings,2026-02-07
+Khadki,Pune,Grade B,18.5204,73.8567,24.79,23.08,28.51,19000.0,17000.0,15000.0,30000.0,811.6,900.0,5,Medium,1.6,1.6,Real Property Listings,2026-02-07
+Khandve Nagar,Pune,Grade B,18.5204,73.8567,19.43,19.43,22.35,11250.0,11250.0,7500.0,15000.0,562.5,562.5,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kirkatwadi,Pune,Grade C,18.5204,73.8567,9.33,9.33,10.73,7000.0,7000.0,7000.0,7000.0,750.0,750.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kirtane Baugh,Pune,Grade C,18.5204,73.8567,5.5,5.5,6.33,24768.74,24768.74,24768.74,24768.74,4500.0,4500.0,1,Low,4.0,4.0,Real Property Listings,2026-02-07
+Kiwale,Pune,Grade B,18.5204,73.8567,17.3,17.33,19.9,13000.0,13000.0,8000.0,22000.0,750.11,750.0,9,Medium,1.8,1.8,Real Property Listings,2026-02-07
+Kolawadi,Pune,Grade C,18.5204,73.8567,8.96,8.96,10.3,6000.0,6000.0,6000.0,6000.0,670.0,670.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kolhewadi,Pune,Grade C,18.5204,73.8567,13.0,13.0,14.95,6500.0,6500.0,6500.0,6500.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kondwa budruk . Tilekar nagar,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,7000.0,7000.0,7000.0,7000.0,525.0,525.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Krishna Nagar,Pune,Grade A,18.5204,73.8567,28.75,28.75,33.06,23000.0,23000.0,23000.0,23000.0,800.0,800.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kudale Baug,Pune,Grade C,18.5204,73.8567,12.22,12.22,14.06,11000.0,11000.0,11000.0,11000.0,900.0,900.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Kumathekar road,Pune,Grade A,18.5204,73.8567,32.73,32.73,37.64,18000.0,18000.0,18000.0,18000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kunal Icon road,Pune,Grade A,18.5204,73.8567,29.41,29.41,33.82,12500.0,12500.0,12500.0,12500.0,425.0,425.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kundan Nagar,Pune,Grade B,18.5204,73.8567,22.78,22.78,26.19,20500.0,20500.0,20500.0,20500.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Kunj Colony,Pune,Grade B,18.5204,73.8567,20.76,20.76,23.87,23000.0,23000.0,21000.0,25000.0,1300.0,1300.0,2,Low,2.5,2.5,Real Property Listings,2026-02-07
+Kuthwad Colony,Pune,Grade A,18.5204,73.8567,26.0,26.0,29.9,13000.0,13000.0,13000.0,13000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Kutwal Colony,Pune,Grade B,18.5204,73.8567,21.08,21.43,24.25,12700.0,12000.0,8500.0,16500.0,598.0,550.0,5,Medium,1.4,1.4,Real Property Listings,2026-02-07
+LAW COLLAGE ROAD,Pune,Grade A,18.5204,73.8567,32.35,32.35,37.21,55000.0,55000.0,55000.0,55000.0,1700.0,1700.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Lane 1 Sakore Nagar Behind iDBI bank,Pune,Grade A,18.5204,73.8567,32.73,32.73,37.64,18000.0,18000.0,18000.0,18000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Lane 2,Pune,Grade B,18.5204,73.8567,15.38,15.38,17.69,10000.0,10000.0,10000.0,10000.0,650.0,650.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Law College Road,Pune,Premium,18.5204,73.8567,40.68,40.68,46.79,37500.0,37500.0,20000.0,55000.0,872.5,872.5,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Laxman Nagar,Pune,Grade A,18.5204,73.8567,26.61,26.67,30.6,25785.71,28000.0,15000.0,35000.0,1011.0,850.0,7,Medium,2.1,2.3,Real Property Listings,2026-02-07
+Laxmi Colony,Pune,Grade B,18.5204,73.8567,16.36,15.37,18.81,9200.0,8300.0,8300.0,11000.0,560.0,540.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Laxmi Nagar,Pune,Grade A,18.5204,73.8567,36.67,36.67,42.17,22000.0,22000.0,22000.0,22000.0,600.0,600.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Laxmi Road,Pune,Premium,18.5204,73.8567,41.67,41.67,47.92,10000.0,10000.0,10000.0,10000.0,240.0,240.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Laxmi-Narayan Nagar,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,15000.0,15000.0,10000.0,20000.0,750.0,750.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Link road from Khadki to Bopodi,Pune,Grade B,18.5204,73.8567,21.25,21.25,24.44,17000.0,17000.0,17000.0,17000.0,800.0,800.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Lokmanya Colony,Pune,Grade A,18.5204,73.8567,27.76,27.76,31.93,16500.0,16500.0,16000.0,17000.0,600.0,600.0,2,Low,1.5,2.0,Real Property Listings,2026-02-07
+Loni,Pune,Grade B,18.5204,73.8567,17.95,17.95,20.64,14000.0,14000.0,14000.0,14000.0,780.0,780.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Loni Kalbhor,Pune,Grade B,18.5204,73.8567,15.94,15.42,18.33,10500.0,10000.0,8000.0,14000.0,672.5,700.0,4,Low,1.5,1.5,Real Property Listings,2026-02-07
+Loni kalbor,Pune,Grade C,18.5204,73.8567,12.53,12.53,14.41,5000.0,5000.0,5000.0,5000.0,399.0,399.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Lonikand,Pune,Grade C,18.5204,73.8567,10.32,10.32,11.87,6500.0,6500.0,6500.0,6500.0,630.0,630.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Lonkar Nagar,Pune,Grade B,18.5204,73.8567,20.69,20.69,23.79,15000.0,15000.0,15000.0,15000.0,725.0,725.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Lullanagar,Pune,Grade B,18.5204,73.8567,21.41,20.74,24.62,25846.15,22000.0,13000.0,44000.0,1279.23,1050.0,13,High,2.4,2.4,Real Property Listings,2026-02-07
+MG Road,Pune,Grade B,18.5204,73.8567,23.75,23.75,27.31,9500.0,9500.0,9500.0,9500.0,400.0,400.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+MIDC,Pune,Grade B,18.5204,73.8567,15.64,15.64,17.98,13000.0,13000.0,13000.0,13000.0,835.0,835.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Madhav Nagar,Pune,Grade B,18.5204,73.8567,21.43,21.36,24.64,13000.0,13000.0,12500.0,13500.0,627.33,632.0,3,Low,1.3,1.7,Real Property Listings,2026-02-07
+Mahadev Nagar,Pune,Grade C,18.5204,73.8567,11.11,11.11,12.78,5000.0,5000.0,5000.0,5000.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Mahalunge,Pune,Grade B,18.5204,73.8567,18.85,18.64,21.68,13687.5,10250.0,6500.0,23000.0,709.7,550.0,8,Medium,1.5,1.5,Real Property Listings,2026-02-07
+Mahalunge Ingale,Pune,Grade B,18.5204,73.8567,17.13,18.18,19.7,6933.33,6800.0,6000.0,8000.0,410.0,440.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Maji Sainik Nagar,Pune,Grade A,18.5204,73.8567,30.96,30.96,35.6,25500.0,25500.0,23000.0,28000.0,835.0,835.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Malwadi,Pune,Grade B,18.5204,73.8567,20.97,20.97,24.11,17000.0,17000.0,12000.0,22000.0,801.5,801.5,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Manaji Nagar,Pune,Grade B,18.5204,73.8567,17.86,17.86,20.54,15000.0,15000.0,15000.0,15000.0,840.0,840.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Mandai,Pune,Premium,18.5204,73.8567,42.31,42.31,48.65,16250.0,16250.0,14500.0,18000.0,383.0,383.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Manik Baug,Pune,Grade B,18.5204,73.8567,15.98,16.42,18.37,13000.0,11000.0,8000.0,20000.0,790.0,670.0,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+Manik bag,Pune,Grade B,18.5204,73.8567,16.44,16.44,18.9,12000.0,12000.0,12000.0,12000.0,730.0,730.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Manjari Budruk,Pune,Grade B,18.5204,73.8567,18.67,15.09,21.47,12083.42,9000.0,4500.0,50000.0,614.08,606.0,12,High,1.5,1.4,Real Property Listings,2026-02-07
+Manjri,Pune,Grade B,18.5204,73.8567,17.37,17.19,19.97,14850.0,14500.0,8000.0,26000.0,849.8,841.5,10,High,2.0,2.0,Real Property Listings,2026-02-07
+Manjri BK,Pune,Grade B,18.5204,73.8567,17.09,16.0,19.65,11714.29,12000.0,8000.0,14500.0,701.57,750.0,7,Medium,1.9,1.7,Real Property Listings,2026-02-07
+Market yard,Pune,Grade B,18.5204,73.8567,21.66,21.43,24.91,15285.71,15000.0,8000.0,23000.0,729.29,630.0,7,Medium,1.3,1.4,Real Property Listings,2026-02-07
+Marunji,Pune,Grade B,18.5204,73.8567,19.29,17.74,22.18,10300.0,9250.0,7500.0,14000.0,577.7,550.0,10,High,1.6,1.6,Real Property Listings,2026-02-07
+Marunji laxmi chowk,Pune,Grade B,18.5204,73.8567,22.83,22.83,26.25,10500.0,10500.0,10500.0,10500.0,460.0,460.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Mate Nagar,Pune,Grade C,18.5204,73.8567,13.57,13.57,15.61,9000.0,9000.0,6000.0,12000.0,775.0,775.0,2,Low,1.5,1.0,Real Property Listings,2026-02-07
+Matoba Nagar,Pune,Grade A,18.5204,73.8567,31.76,31.76,36.53,27000.0,27000.0,27000.0,27000.0,850.0,850.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Maval,Pune,Grade C,18.5204,73.8567,10.32,10.32,11.87,24768.74,24768.74,24768.74,24768.74,2400.0,2400.0,1,Low,5.0,2.0,Real Property Listings,2026-02-07
+Mayur Colony,Pune,Grade A,18.5204,73.8567,29.79,32.5,34.26,27984.0,27888.0,15000.0,37000.0,966.57,820.0,7,Medium,2.0,2.0,Real Property Listings,2026-02-07
+Meera Nagar,Pune,Grade A,18.5204,73.8567,36.05,36.36,41.46,41666.67,50000.0,25000.0,50000.0,1141.67,1300.0,3,Low,2.3,2.3,Real Property Listings,2026-02-07
+Mhada Colony,Pune,Grade A,18.5204,73.8567,28.23,30.59,32.46,25944.44,26000.0,21000.0,32000.0,939.44,945.0,9,Medium,2.2,2.2,Real Property Listings,2026-02-07
+Mitra Mandal Colony,Pune,Grade C,18.5204,73.8567,7.81,7.81,8.98,2500.0,2500.0,2500.0,2500.0,320.0,320.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Model Colony,Pune,Grade A,18.5204,73.8567,31.94,31.94,36.73,27166.67,27500.0,16000.0,40000.0,892.33,897.5,6,Medium,2.2,1.8,Real Property Listings,2026-02-07
+Mohamadwadi,Pune,Grade B,18.5204,73.8567,22.55,19.64,25.94,29137.5,28250.0,12000.0,60000.0,1487.66,1153.5,40,High,2.7,2.9,Real Property Listings,2026-02-07
+More Super Mart Near,Pune,Grade C,18.5204,73.8567,10.81,10.81,12.43,6000.0,6000.0,6000.0,6000.0,555.0,555.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Moshi,Pune,Grade B,18.5204,73.8567,16.4,15.98,18.86,12215.28,12000.0,8000.0,21000.0,765.38,800.0,40,High,1.8,1.8,Real Property Listings,2026-02-07
+Mrutyunjay Colony,Pune,Grade A,18.5204,73.8567,29.09,29.09,33.45,16000.0,16000.0,16000.0,16000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Mulshi Rd,Pune,Grade C,18.5204,73.8567,10.0,10.0,11.5,10000.0,10000.0,10000.0,10000.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Munjaba Vasti,Pune,Grade B,18.5204,73.8567,18.83,19.17,21.65,14666.67,13500.0,11500.0,19000.0,776.67,770.0,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+Munjabawasti,Pune,Grade B,18.5204,73.8567,23.21,23.21,26.7,26000.0,26000.0,26000.0,26000.0,1120.0,1120.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+NEAR ELITE HOMES,Pune,Grade B,18.5204,73.8567,16.0,16.0,18.4,4000.0,4000.0,4000.0,4000.0,250.0,250.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+NIBM,Pune,Grade B,18.5204,73.8567,19.35,18.92,22.25,22168.97,19500.0,11500.0,55000.0,1199.94,1100.0,58,High,2.4,2.5,Real Property Listings,2026-02-07
+Nagar Road,Pune,Grade B,18.5204,73.8567,24.24,24.24,27.88,17750.0,17750.0,17000.0,18500.0,762.5,762.5,2,Low,1.5,2.0,Real Property Listings,2026-02-07
+Nagpur,Pune,Grade C,18.5204,73.8567,11.36,11.36,13.07,12500.0,12500.0,12500.0,12500.0,1100.0,1100.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Nanded,Pune,Grade B,18.5204,73.8567,22.5,22.5,25.87,13500.0,13500.0,13500.0,13500.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Naran Bhag,Pune,Grade C,18.5204,73.8567,11.58,11.58,13.32,11000.0,11000.0,11000.0,11000.0,950.0,950.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Narayan Peth,Pune,Grade A,18.5204,73.8567,37.5,37.5,43.12,7500.0,7500.0,7500.0,7500.0,200.0,200.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Navi Peth,Pune,Grade B,18.5204,73.8567,24.65,24.65,28.34,21750.0,21750.0,18500.0,25000.0,925.0,925.0,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Near Bajirao road,Pune,Grade B,18.5204,73.8567,23.15,23.15,26.62,12500.0,12500.0,12500.0,12500.0,540.0,540.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Near CME army area,Pune,Grade C,18.5204,73.8567,13.09,13.09,15.06,10500.0,10500.0,10500.0,10500.0,802.0,802.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Near Dattanagar police station,Pune,Grade C,18.5204,73.8567,10.87,10.87,12.5,9000.0,9000.0,9000.0,9000.0,828.0,828.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Near Digambar wadi School,Pune,Grade B,18.5204,73.8567,18.29,18.29,21.04,7500.0,7500.0,7500.0,7500.0,410.0,410.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Near Inorbit Mall Nagar Road,Pune,Grade A,18.5204,73.8567,26.98,26.98,31.03,17000.0,17000.0,17000.0,17000.0,630.0,630.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Near Natraj Gas,Pune,Grade A,18.5204,73.8567,30.0,30.0,34.5,16500.0,16500.0,16500.0,16500.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Near Oxford Blues,Pune,Grade B,18.5204,73.8567,21.67,21.67,24.92,13000.0,13000.0,13000.0,13000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Near Prathamesh park,Pune,Grade A,18.5204,73.8567,25.93,25.93,29.81,14000.0,14000.0,14000.0,14000.0,540.0,540.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Near RTO Office,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,10000.0,10000.0,10000.0,10000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Near Vasantdada Sugar Institute,Pune,Grade B,18.5204,73.8567,15.91,15.91,18.3,7000.0,7000.0,7000.0,7000.0,440.0,440.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Near chaitanya Health club Rambhug colony,Pune,Grade A,18.5204,73.8567,28.99,28.99,33.33,22000.0,22000.0,22000.0,22000.0,759.0,759.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Near matoshree Hospital,Pune,Grade A,18.5204,73.8567,30.0,30.0,34.5,18000.0,18000.0,18000.0,18000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Near ramkrishna mangalkaryalay,Pune,Grade B,18.5204,73.8567,24.07,24.07,27.69,13000.0,13000.0,13000.0,13000.0,540.0,540.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Nehru Nagar,Pune,Grade B,18.5204,73.8567,21.32,21.32,24.51,12000.0,12000.0,11000.0,13000.0,567.5,567.5,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Nere,Pune,Grade B,18.5204,73.8567,15.31,14.74,17.61,7840.0,6500.0,6000.0,14000.0,519.0,418.0,5,Medium,1.4,1.4,Real Property Listings,2026-02-07
+New Sangavi.,Pune,Grade B,18.5204,73.8567,24.14,24.14,27.76,14000.0,14000.0,14000.0,14000.0,580.0,580.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+New Sanghvi,Pune,Grade B,18.5204,73.8567,21.3,19.27,24.49,12625.0,13000.0,7000.0,16000.0,641.62,650.0,8,Medium,1.5,1.4,Real Property Listings,2026-02-07
+Nibm Road,Pune,Grade A,18.5204,73.8567,31.58,31.58,36.32,60000.0,60000.0,60000.0,60000.0,1900.0,1900.0,1,Low,3.0,4.0,Real Property Listings,2026-02-07
+Nimbaj Nagar,Pune,Grade B,18.5204,73.8567,18.87,18.87,21.7,10000.0,10000.0,10000.0,10000.0,530.0,530.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Niranjan Park,Pune,Grade B,18.5204,73.8567,21.23,21.23,24.42,15500.0,15500.0,15500.0,15500.0,730.0,730.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+No Limits Fitness Gym,Pune,Grade B,18.5204,73.8567,17.14,17.14,19.71,6000.0,6000.0,6000.0,6000.0,350.0,350.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Nr. Amanora Park Town,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,22500.0,22500.0,22500.0,22500.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+O Hadapasar chandan nagar bypassb,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,10500.0,10500.0,10500.0,10500.0,630.0,630.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Old Sangvi,Pune,Grade B,18.5204,73.8567,18.86,18.97,21.69,10750.0,10500.0,9000.0,13000.0,588.25,576.5,4,Low,1.2,1.2,Real Property Listings,2026-02-07
+Opposite SP Infosity Phursungi,Pune,Grade B,18.5204,73.8567,18.02,18.02,20.72,10000.0,10000.0,10000.0,10000.0,555.0,555.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Opposite Wisdom World School,Pune,Grade B,18.5204,73.8567,22.34,22.34,25.69,25000.0,25000.0,25000.0,25000.0,1119.0,1119.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+PUNE,Pune,Grade B,18.5204,73.8567,22.22,22.22,25.56,10000.0,10000.0,10000.0,10000.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Padmavati,Pune,Grade B,18.5204,73.8567,19.56,18.87,22.49,15000.0,15000.0,10000.0,20000.0,760.0,800.0,3,Low,1.7,1.3,Real Property Listings,2026-02-07
+Panchod,Pune,Grade B,18.5204,73.8567,17.71,17.71,20.36,7500.0,7500.0,6000.0,9000.0,430.0,430.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Pandhare Wasti,Pune,Grade B,18.5204,73.8567,17.31,17.31,19.9,13500.0,13500.0,13000.0,14000.0,780.0,780.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Pandhari Nagar,Pune,Grade B,18.5204,73.8567,19.52,17.86,22.45,10166.67,11000.0,7500.0,12000.0,555.0,445.0,3,Low,1.3,1.3,Real Property Listings,2026-02-07
+Papde Wasti,Pune,Grade C,18.5204,73.8567,11.71,11.71,13.47,6000.0,6000.0,5500.0,6500.0,515.0,515.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Parande Nagar,Pune,Grade B,18.5204,73.8567,18.18,18.18,20.91,8000.0,8000.0,8000.0,8000.0,440.0,440.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Parihar Chouk,Pune,Grade B,18.5204,73.8567,24.44,24.44,28.11,22000.0,22000.0,22000.0,22000.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Park Street,Pune,Grade B,18.5204,73.8567,21.92,21.92,25.21,28500.0,28500.0,28500.0,28500.0,1300.0,1300.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Parvati Gaon,Pune,Grade A,18.5204,73.8567,34.0,34.0,39.1,8500.0,8500.0,8500.0,8500.0,250.0,250.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Patil Nagar,Pune,Grade B,18.5204,73.8567,23.42,23.0,26.93,18750.0,20000.0,12000.0,23000.0,797.5,820.0,4,Low,2.0,2.0,Real Property Listings,2026-02-07
+Paud Road,Pune,Grade A,18.5204,73.8567,26.79,26.15,30.81,17750.0,16500.0,12000.0,26000.0,693.0,536.0,4,Low,1.5,1.5,Real Property Listings,2026-02-07
+Pavana Nagar,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,10000.0,10000.0,10000.0,10000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Pawana Nagar,Pune,Grade A,18.5204,73.8567,29.87,29.87,34.35,13500.0,13500.0,13500.0,13500.0,452.0,452.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Pawar Nagar,Pune,Grade B,18.5204,73.8567,19.83,19.83,22.81,12000.0,12000.0,12000.0,12000.0,605.0,605.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Pawna Nagar,Pune,Grade B,18.5204,73.8567,18.5,18.5,21.28,18500.0,18500.0,18500.0,18500.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Phase 1,Pune,Grade B,18.5204,73.8567,23.3,23.3,26.8,12000.0,12000.0,12000.0,12000.0,515.0,515.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Phursungi,Pune,Grade B,18.5204,73.8567,16.73,14.61,19.23,10500.0,9250.0,5500.0,19000.0,659.9,614.0,10,High,1.4,1.4,Real Property Listings,2026-02-07
+Pingale Wasti,Pune,Grade B,18.5204,73.8567,24.24,21.55,27.87,18625.0,18250.0,9000.0,29000.0,878.75,782.5,4,Low,1.5,1.5,Real Property Listings,2026-02-07
+Pirangut,Pune,Grade C,18.5204,73.8567,10.74,10.54,12.35,7800.0,7000.0,6000.0,10000.0,744.63,664.14,5,Medium,1.8,2.0,Real Property Listings,2026-02-07
+Pisoli,Pune,Grade A,18.5204,73.8567,34.91,16.2,40.14,12944.44,13000.0,10000.0,15000.0,761.83,830.0,9,Medium,2.0,2.0,Real Property Listings,2026-02-07
+Plot 103,Pune,Grade B,18.5204,73.8567,18.18,18.18,20.91,20000.0,20000.0,20000.0,20000.0,1100.0,1100.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Postal Colony,Pune,Grade B,18.5204,73.8567,19.6,19.63,22.54,12142.86,13000.0,5000.0,21000.0,651.43,540.0,7,Medium,1.4,1.4,Real Property Listings,2026-02-07
+Prabhat Road,Pune,Grade A,18.5204,73.8567,33.01,33.33,37.96,49666.67,50000.0,28000.0,70000.0,1498.33,1500.0,6,Medium,3.0,3.0,Real Property Listings,2026-02-07
+Pradhikaran,Pune,Grade B,18.5204,73.8567,18.28,17.65,21.02,16400.0,15000.0,12000.0,22000.0,891.8,850.0,5,Medium,2.2,2.2,Real Property Listings,2026-02-07
+Pragati Nagar,Pune,Grade B,18.5204,73.8567,19.01,19.01,21.86,17500.0,17500.0,15000.0,20000.0,928.0,928.0,2,Low,2.0,1.5,Real Property Listings,2026-02-07
+Pranjali Patil Nagar,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,10000.0,10000.0,10000.0,10000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Prasad Nagar,Pune,Grade B,18.5204,73.8567,24.29,24.29,27.93,17000.0,17000.0,17000.0,17000.0,700.0,700.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Punawale,Pune,Grade B,18.5204,73.8567,21.59,20.34,24.82,14687.8,14000.0,9000.0,25000.0,706.29,712.0,41,High,1.8,1.9,Real Property Listings,2026-02-07
+Pune Cantonment,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,18000.0,18000.0,18000.0,18000.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Pune Mumbai Highway,Pune,Grade A,18.5204,73.8567,33.16,30.77,38.13,18333.33,16000.0,15000.0,24000.0,546.67,520.0,3,Low,1.0,1.3,Real Property Listings,2026-02-07
+RAIGAD COLONY,Pune,Grade C,18.5204,73.8567,14.17,14.17,16.29,8500.0,8500.0,8500.0,8500.0,600.0,600.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Raghavendra Nagar,Pune,Grade A,18.5204,73.8567,26.62,26.53,30.61,19000.0,20500.0,14000.0,21000.0,724.0,748.0,4,Low,1.8,1.8,Real Property Listings,2026-02-07
+Raghoba Patil Nagar,Pune,Grade B,18.5204,73.8567,19.48,19.61,22.4,7833.33,7000.0,6500.0,10000.0,453.33,510.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Rahatani,Pune,Grade B,18.5204,73.8567,22.83,23.57,26.26,16700.0,16500.0,7500.0,25000.0,745.53,720.0,15,High,1.8,1.8,Real Property Listings,2026-02-07
+Rahatni,Pune,Grade C,18.5204,73.8567,14.61,14.61,16.81,14000.0,14000.0,14000.0,14000.0,958.0,958.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Rajaram Patil Nagar,Pune,Grade B,18.5204,73.8567,22.22,22.22,25.56,20000.0,20000.0,20000.0,20000.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Rakshak Nagar,Pune,Grade B,18.5204,73.8567,21.18,21.18,24.35,18000.0,18000.0,18000.0,18000.0,850.0,850.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Rambagh Colony,Pune,Grade B,18.5204,73.8567,23.44,23.44,26.95,15000.0,15000.0,15000.0,15000.0,640.0,640.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Rambaug Colony,Pune,Grade B,18.5204,73.8567,24.89,23.95,28.62,27875.0,27250.0,22000.0,35000.0,1140.5,1189.0,4,Low,2.5,2.5,Real Property Listings,2026-02-07
+Ramwadi,Pune,Grade B,18.5204,73.8567,22.5,22.5,25.87,9000.0,9000.0,9000.0,9000.0,400.0,400.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Ranjangaon,Pune,Grade B,18.5204,73.8567,15.0,15.0,17.25,6000.0,6000.0,6000.0,6000.0,400.0,400.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Rasta Peth,Pune,Grade A,18.5204,73.8567,28.1,28.1,32.32,13250.0,13250.0,10000.0,16500.0,466.0,466.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Ratnadeep Colony,Pune,Grade B,18.5204,73.8567,17.26,17.26,19.85,7250.0,7250.0,7000.0,7500.0,420.0,420.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Renuka Nagar,Pune,Grade B,18.5204,73.8567,18.67,18.67,21.48,11250.0,11250.0,11000.0,11500.0,602.5,602.5,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Revenue Colony,Pune,Premium,18.5204,73.8567,50.0,50.0,57.5,7500.0,7500.0,7500.0,7500.0,150.0,150.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sade Satra Nali,Pune,Grade A,18.5204,73.8567,27.23,27.23,31.31,21000.0,21000.0,20000.0,22000.0,775.0,775.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Sahakar Nagar,Pune,Grade B,18.5204,73.8567,19.29,19.29,22.18,15000.0,15000.0,13000.0,17000.0,775.0,775.0,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Sahakar Nagar II,Pune,Grade A,18.5204,73.8567,25.71,25.71,29.57,36000.0,36000.0,36000.0,36000.0,1400.0,1400.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Sahaney Sujan Park,Pune,Grade B,18.5204,73.8567,16.54,16.54,19.02,43000.0,43000.0,43000.0,43000.0,2600.0,2600.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Sai Colony,Pune,Grade C,18.5204,73.8567,14.01,14.01,16.11,13500.0,13500.0,11000.0,16000.0,1000.0,1000.0,2,Low,2.0,1.5,Real Property Listings,2026-02-07
+Sai Nagar,Pune,Grade C,18.5204,73.8567,11.43,11.43,13.14,6000.0,6000.0,6000.0,6000.0,525.0,525.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sai Nagar Park,Pune,Grade B,18.5204,73.8567,21.97,21.97,25.27,20500.0,20500.0,20500.0,20500.0,933.0,933.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Sai Samruddhi Park Moze Nagar Lane No 6,Pune,Grade C,18.5204,73.8567,10.88,10.88,12.52,9000.0,9000.0,9000.0,9000.0,827.0,827.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Sainagar,Pune,Grade C,18.5204,73.8567,11.43,11.43,13.14,6000.0,6000.0,6000.0,6000.0,525.0,525.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sainath Nagar,Pune,Grade B,18.5204,73.8567,24.77,23.95,28.49,16375.0,17250.0,11000.0,20000.0,686.75,648.5,4,Low,1.8,1.8,Real Property Listings,2026-02-07
+Sainikwadi,Pune,Grade C,18.5204,73.8567,12.0,12.0,13.8,6000.0,6000.0,6000.0,6000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sairajpark Ph2,Pune,Grade B,18.5204,73.8567,18.46,18.46,21.23,6000.0,6000.0,6000.0,6000.0,325.0,325.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sakal Nagar,Pune,Grade A,18.5204,73.8567,30.14,30.14,34.66,15750.0,15750.0,15000.0,16500.0,525.0,525.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sakore Nagar,Pune,Grade A,18.5204,73.8567,28.57,28.57,32.86,23000.0,23000.0,23000.0,23000.0,805.0,805.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Salisbury Park,Pune,Grade B,18.5204,73.8567,17.2,17.2,19.78,13500.0,13500.0,13500.0,13500.0,785.0,785.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Salunke Vihar,Pune,Grade B,18.5204,73.8567,20.32,19.47,23.37,21400.0,19500.0,18500.0,29000.0,1070.0,950.0,5,Medium,2.2,2.2,Real Property Listings,2026-02-07
+Sambhaji Nagar,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,7500.0,7500.0,7500.0,7500.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sanaswadi,Pune,Grade C,18.5204,73.8567,12.9,12.9,14.84,4000.0,4000.0,4000.0,4000.0,310.0,310.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sanewadi,Pune,Grade A,18.5204,73.8567,31.82,31.82,36.59,17500.0,17500.0,17500.0,17500.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sangam Nagar,Pune,Grade C,18.5204,73.8567,13.24,13.24,15.22,9000.0,9000.0,9000.0,9000.0,680.0,680.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sangamvadi,Pune,Grade B,18.5204,73.8567,18.0,18.0,20.7,9000.0,9000.0,9000.0,9000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sanghvi,Pune,Grade B,18.5204,73.8567,20.05,20.0,23.06,9000.0,11000.0,4000.0,12000.0,450.0,550.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sant Nagar,Pune,Grade C,18.5204,73.8567,13.81,13.81,15.88,7000.0,7000.0,7000.0,7000.0,507.0,507.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Sant Tukaram Nagar,Pune,Grade B,18.5204,73.8567,18.89,18.89,21.72,17000.0,17000.0,17000.0,17000.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Sasane Colony,Pune,Grade B,18.5204,73.8567,21.16,21.16,24.33,9750.0,9750.0,6000.0,13500.0,452.5,452.5,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sasane Nagar,Pune,Grade B,18.5204,73.8567,16.15,15.71,18.58,13277.78,13000.0,9000.0,20000.0,833.89,772.0,9,Medium,2.0,1.9,Real Property Listings,2026-02-07
+Satav Nagar,Pune,Grade B,18.5204,73.8567,18.51,15.19,21.29,13333.33,13000.0,12000.0,15000.0,778.33,790.0,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+Sector No-26 Pradhikaran,Pune,Grade B,18.5204,73.8567,20.2,20.2,23.23,11000.0,11000.0,10000.0,12000.0,545.0,545.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sector No-27A Pradhikaran,Pune,Grade A,18.5204,73.8567,26.25,26.25,30.19,21000.0,21000.0,21000.0,21000.0,800.0,800.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Sector No. 11 CDC,Pune,Grade C,18.5204,73.8567,14.09,14.09,16.2,15500.0,15500.0,15500.0,15500.0,1100.0,1100.0,1,Low,3.0,2.0,Real Property Listings,2026-02-07
+Sector-13 Chikhali,Pune,Grade C,18.5204,73.8567,14.17,14.17,16.29,8500.0,8500.0,8500.0,8500.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sector-6 Moshi,Pune,Grade C,18.5204,73.8567,8.85,8.85,10.17,24768.74,24768.74,24768.74,24768.74,2800.0,2800.0,1,Low,5.0,4.0,Real Property Listings,2026-02-07
+Senapati Bapat Road,Pune,Premium,18.5204,73.8567,50.86,50.86,58.49,50500.0,50500.0,26000.0,75000.0,932.5,932.5,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Shahunagar,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,10000.0,10000.0,10000.0,10000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Shani Nagar,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,6000.0,6000.0,6000.0,6000.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Shaniwar Peth,Pune,Grade A,18.5204,73.8567,33.43,36.0,38.44,18333.33,18000.0,17000.0,20000.0,566.67,500.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Shankar Kalat Nagar,Pune,Grade B,18.5204,73.8567,20.21,20.0,23.24,18005.03,18000.0,8666.0,30000.0,912.3,900.0,33,High,2.1,2.0,Real Property Listings,2026-02-07
+Shastri Nagar,Pune,Grade A,18.5204,73.8567,27.25,26.04,31.34,15437.5,15250.0,6000.0,25000.0,591.5,585.0,8,Medium,1.2,1.2,Real Property Listings,2026-02-07
+Shewalewadi,Pune,Grade C,18.5204,73.8567,14.26,14.26,16.4,13500.0,13500.0,12500.0,14500.0,1016.5,1016.5,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Shikrapur,Pune,Grade C,18.5204,73.8567,9.23,9.23,10.62,6000.0,6000.0,6000.0,6000.0,650.0,650.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Shikshaknagar,Pune,Grade B,18.5204,73.8567,20.87,20.87,24.0,12000.0,12000.0,12000.0,12000.0,575.0,575.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Shinde Vasti,Pune,Grade B,18.5204,73.8567,20.99,17.95,24.14,15000.0,14000.0,13000.0,18000.0,726.67,750.0,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+Shindenagar,Pune,Grade B,18.5204,73.8567,23.19,23.17,26.67,17000.0,18000.0,14000.0,20000.0,752.0,820.0,5,Medium,1.6,1.8,Real Property Listings,2026-02-07
+Shiraswadi,Pune,Grade C,18.5204,73.8567,7.54,7.54,8.67,3500.0,3500.0,3500.0,3500.0,464.0,464.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Shirgaon,Pune,Grade B,18.5204,73.8567,15.88,15.88,18.26,10500.0,10500.0,9000.0,12000.0,666.0,666.0,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Shiv colony,Pune,Grade B,18.5204,73.8567,16.03,16.03,18.44,5500.0,5500.0,5500.0,5500.0,343.0,343.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Shivaji Nagar,Pune,Grade A,18.5204,73.8567,31.29,31.67,35.98,21833.33,18000.0,15000.0,35000.0,709.17,702.5,6,Medium,1.5,1.3,Real Property Listings,2026-02-07
+Shivane,Pune,Grade C,18.5204,73.8567,12.42,11.68,14.28,8555.56,9000.0,6000.0,12000.0,746.56,707.0,9,Medium,1.7,1.6,Real Property Listings,2026-02-07
+Shivneri Nagar,Pune,Grade B,18.5204,73.8567,18.42,18.42,21.18,9750.0,9750.0,6500.0,13000.0,550.0,550.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Shivtirth Nagar,Pune,Grade B,18.5204,73.8567,24.6,25.45,28.29,17166.67,17500.0,14000.0,20000.0,706.67,670.0,3,Low,1.3,1.7,Real Property Listings,2026-02-07
+Shramasafalya colony,Pune,Grade B,18.5204,73.8567,17.0,17.0,19.55,8500.0,8500.0,8500.0,8500.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Shukravar Peth,Pune,Grade A,18.5204,73.8567,29.47,29.47,33.89,14000.0,14000.0,14000.0,14000.0,475.0,475.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Siddharth Nagar,Pune,Grade B,18.5204,73.8567,24.36,22.22,28.01,21800.0,18000.0,15000.0,35000.0,880.6,843.0,5,Medium,2.0,2.2,Real Property Listings,2026-02-07
+Sinhagad Road,Pune,Grade B,18.5204,73.8567,19.19,19.19,22.07,17000.0,17000.0,17000.0,17000.0,886.0,886.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Sinhgad Rd,Pune,Grade B,18.5204,73.8567,16.07,16.07,18.48,9000.0,9000.0,9000.0,9000.0,560.0,560.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sinhgad Road,Pune,Grade B,18.5204,73.8567,17.75,16.67,20.41,14662.5,13500.0,8100.0,25000.0,852.06,789.0,16,High,1.9,1.8,Real Property Listings,2026-02-07
+Sinhgad Road anandnagar,Pune,Grade B,18.5204,73.8567,21.54,21.54,24.77,14000.0,14000.0,14000.0,14000.0,650.0,650.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Somatane,Pune,Grade C,18.5204,73.8567,11.9,11.9,13.69,7200.0,7200.0,7200.0,7200.0,605.0,605.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Someshwarwadi,Pune,Grade B,18.5204,73.8567,21.97,21.24,25.26,23500.0,20500.0,20000.0,33000.0,1057.5,990.0,4,Low,2.2,2.2,Real Property Listings,2026-02-07
+Somnath Nagar,Pune,Grade B,18.5204,73.8567,23.0,23.0,26.45,14500.0,14500.0,13000.0,16000.0,635.0,635.0,2,Low,1.5,1.0,Real Property Listings,2026-02-07
+Somwar Peth,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,11250.0,11250.0,10000.0,12500.0,450.0,450.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sopan Baug,Pune,Grade C,18.5204,73.8567,6.43,6.43,7.4,24768.74,24768.74,24768.74,24768.74,3850.0,3850.0,1,Low,4.0,6.0,Real Property Listings,2026-02-07
+Sopan Nagar,Pune,Grade A,18.5204,73.8567,25.45,25.45,29.27,14000.0,14000.0,14000.0,14000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+St Tukaram Nagar,Pune,Grade B,18.5204,73.8567,15.04,15.04,17.3,13250.0,13250.0,11500.0,15000.0,887.5,887.5,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Subhash nagar,Pune,Grade C,18.5204,73.8567,14.93,14.93,17.16,10000.0,10000.0,10000.0,10000.0,670.0,670.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sudarshan Nagar,Pune,Grade B,18.5204,73.8567,21.46,21.46,24.68,10250.0,10250.0,10000.0,10500.0,479.0,479.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Sukhsagar Nagar,Pune,Grade C,18.5204,73.8567,13.53,13.53,15.56,11500.0,11500.0,11500.0,11500.0,850.0,850.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Sunita Nagar,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,12000.0,12000.0,12000.0,12000.0,900.0,900.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Sutarwadi,Pune,Grade B,18.5204,73.8567,17.54,17.54,20.18,14000.0,14000.0,11000.0,17000.0,870.0,870.0,2,Low,2.0,1.5,Real Property Listings,2026-02-07
+Swami Samarth Nagar,Pune,Grade C,18.5204,73.8567,13.12,13.33,15.09,10000.0,10000.0,8000.0,12000.0,773.33,870.0,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+Swami Vivekanand Nagar,Pune,Grade B,18.5204,73.8567,18.38,19.27,21.14,11400.0,10600.0,10600.0,13000.0,630.0,550.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Swapnagri colony gurudwara chowck,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,10000.0,10000.0,10000.0,10000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Swar Gate,Pune,Grade B,18.5204,73.8567,23.53,23.53,27.06,20000.0,20000.0,20000.0,20000.0,850.0,850.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Swatantrya Sainik Nagar,Pune,Grade A,18.5204,73.8567,26.58,26.42,30.57,24000.0,21000.0,21000.0,30000.0,898.33,900.0,3,Low,2.0,2.0,Real Property Listings,2026-02-07
+Talawade,Pune,Grade C,18.5204,73.8567,13.43,13.43,15.44,13750.0,13750.0,12500.0,15000.0,1022.5,1022.5,2,Low,2.0,2.0,Real Property Listings,2026-02-07
+Talegaon,Pune,Grade C,18.5204,73.8567,12.32,12.33,14.17,9000.0,9250.0,6500.0,11000.0,732.5,772.5,4,Low,1.8,1.8,Real Property Listings,2026-02-07
+Talegaon Dabhade,Pune,Grade C,18.5204,73.8567,12.94,12.73,14.88,7666.67,7500.0,7000.0,8500.0,611.67,550.0,3,Low,1.3,1.7,Real Property Listings,2026-02-07
+Tanaji Nagar,Pune,Grade B,18.5204,73.8567,20.19,20.19,23.22,12500.0,12500.0,12000.0,13000.0,625.0,625.0,2,Low,1.5,2.0,Real Property Listings,2026-02-07
+Tathawade,Pune,Grade B,18.5204,73.8567,21.08,20.45,24.24,15277.67,16000.0,5000.0,22000.0,712.44,765.0,9,Medium,1.9,1.8,Real Property Listings,2026-02-07
+Taware Colony,Pune,Grade A,18.5204,73.8567,27.27,27.27,31.36,10500.0,10500.0,10500.0,10500.0,385.0,385.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Thite Nagar,Pune,Grade B,18.5204,73.8567,21.02,21.25,24.18,14500.0,17000.0,5500.0,22500.0,683.14,750.0,7,Medium,1.6,1.6,Real Property Listings,2026-02-07
+Tilekar Nagar,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,6000.0,6000.0,6000.0,6000.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Tingre Nagar,Pune,Grade B,18.5204,73.8567,21.05,20.2,24.21,17466.67,16000.0,7500.0,40000.0,828.33,838.5,18,High,1.8,1.7,Real Property Listings,2026-02-07
+Tingrenagar,Pune,Grade B,18.5204,73.8567,18.29,18.29,21.04,15000.0,15000.0,15000.0,15000.0,820.0,820.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Tingret Nagar,Pune,Grade B,18.5204,73.8567,18.37,18.37,21.12,9000.0,9000.0,9000.0,9000.0,490.0,490.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Tukai Darshan,Pune,Grade C,18.5204,73.8567,14.17,14.17,16.29,8500.0,8500.0,8500.0,8500.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Tukaram Nagar,Pune,Grade B,18.5204,73.8567,23.6,24.56,27.14,15875.0,15000.0,8500.0,25000.0,678.0,706.0,4,Low,1.5,1.5,Real Property Listings,2026-02-07
+Tulaja Bhawani Nagar,Pune,Grade A,18.5204,73.8567,25.62,25.0,29.47,26130.43,24000.0,10000.0,45000.0,1022.0,1000.0,23,High,2.3,2.2,Real Property Listings,2026-02-07
+Ubale Nagar,Pune,Grade B,18.5204,73.8567,18.4,18.4,21.17,15000.0,15000.0,15000.0,15000.0,815.0,815.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Ubalenagar,Pune,Grade C,18.5204,73.8567,13.64,13.64,15.68,7500.0,7500.0,7500.0,7500.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Uday Baug,Pune,Grade A,18.5204,73.8567,27.41,27.41,31.52,37000.0,37000.0,37000.0,37000.0,1350.0,1350.0,1,Low,3.0,2.0,Real Property Listings,2026-02-07
+Udyog Nagar,Pune,Premium,18.5204,73.8567,49.94,67.8,57.43,7666.67,3000.0,3000.0,17000.0,429.49,44.25,3,Low,1.7,1.7,Real Property Listings,2026-02-07
+Urban Nest,Pune,Grade A,18.5204,73.8567,28.3,28.3,32.55,15000.0,15000.0,15000.0,15000.0,530.0,530.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+Uruli Devachi,Pune,Grade C,18.5204,73.8567,13.05,13.05,15.0,7000.0,7000.0,6000.0,8000.0,538.44,538.44,2,Low,1.5,1.0,Real Property Listings,2026-02-07
+Uttam Nagar,Pune,Grade B,18.5204,73.8567,19.58,19.58,22.52,14000.0,14000.0,14000.0,14000.0,715.0,715.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Vadagaonsheri,Pune,Grade C,18.5204,73.8567,14.29,14.29,16.43,20000.0,20000.0,20000.0,20000.0,1400.0,1400.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+Vadgaon Budruk,Pune,Grade B,18.5204,73.8567,16.04,15.87,18.45,9625.0,8500.0,4500.0,17000.0,593.0,561.0,4,Low,1.5,1.5,Real Property Listings,2026-02-07
+Vadgaon Maval,Pune,Grade C,18.5204,73.8567,12.77,12.77,14.68,11750.0,11750.0,5500.0,18000.0,850.0,850.0,2,Low,2.5,2.0,Real Property Listings,2026-02-07
+Vadgaon Sheri,Pune,Grade B,18.5204,73.8567,23.39,22.71,26.9,16666.67,13500.0,8000.0,40000.0,681.67,627.5,6,Medium,1.7,1.7,Real Property Listings,2026-02-07
+Vadgaon phata,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,8000.0,8000.0,8000.0,8000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Vaiduwadi,Pune,Grade B,18.5204,73.8567,23.81,23.81,27.38,20000.0,20000.0,20000.0,20000.0,840.0,840.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Vakil Nagar,Pune,Grade A,18.5204,73.8567,33.33,33.33,38.33,50000.0,50000.0,50000.0,50000.0,1500.0,1500.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Vallabh Nagar,Pune,Grade B,18.5204,73.8567,18.4,18.4,21.16,23000.0,23000.0,23000.0,23000.0,1250.0,1250.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Veerbhadra Nagar,Pune,Grade A,18.5204,73.8567,32.36,32.36,37.22,50000.0,50000.0,30000.0,70000.0,1515.0,1515.0,2,Low,4.5,3.5,Real Property Listings,2026-02-07
+Venu Nagar Cotes,Pune,Grade B,18.5204,73.8567,21.58,21.58,24.82,20500.0,20500.0,20500.0,20500.0,950.0,950.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Vijay Nagar,Pune,Grade B,18.5204,73.8567,22.41,22.41,25.78,6500.0,6500.0,6500.0,6500.0,290.0,290.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Vikas Nagar,Pune,Grade C,18.5204,73.8567,14.16,14.16,16.29,13000.0,13000.0,11000.0,15000.0,914.5,914.5,2,Low,1.5,2.0,Real Property Listings,2026-02-07
+Vinayak Nagar,Pune,Grade B,18.5204,73.8567,17.81,17.65,20.49,12333.33,15000.0,7000.0,15000.0,690.0,820.0,3,Low,1.7,1.0,Real Property Listings,2026-02-07
+Vishal Nagar,Pune,Grade B,18.5204,73.8567,22.67,21.22,26.07,17333.33,18000.0,11000.0,24000.0,791.67,850.0,6,Medium,1.8,1.8,Real Property Listings,2026-02-07
+Vishnu Dev Nagar,Pune,Grade B,18.5204,73.8567,22.96,20.0,26.41,19166.67,14500.0,13000.0,30000.0,966.67,650.0,3,Low,1.7,2.0,Real Property Listings,2026-02-07
+Vishnupuram Colony,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,10000.0,10000.0,10000.0,10000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Vishrantwadi,Pune,Grade B,18.5204,73.8567,23.7,22.87,27.25,16250.0,16250.0,6500.0,26000.0,689.69,682.5,26,High,1.5,1.5,Real Property Listings,2026-02-07
+Vittalvadi,Pune,Grade B,18.5204,73.8567,20.55,20.55,23.63,15000.0,15000.0,15000.0,15000.0,730.0,730.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+WADGAONSHERI,Pune,Grade B,18.5204,73.8567,21.54,21.54,24.77,14000.0,14000.0,14000.0,14000.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Wadachi Wadi,Pune,Grade C,18.5204,73.8567,12.08,12.08,13.89,10000.0,10000.0,10000.0,10000.0,828.0,828.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wadaon sheri,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,20000.0,20000.0,20000.0,20000.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wadebolai,Pune,Grade B,18.5204,73.8567,18.0,18.0,20.7,22500.0,22500.0,22500.0,22500.0,1250.0,1250.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Wadeshwar Nagar,Pune,Grade B,18.5204,73.8567,20.83,20.83,23.96,11000.0,11000.0,10000.0,12000.0,540.0,540.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+Wadgaon Budruk,Pune,Grade C,18.5204,73.8567,11.55,14.29,13.28,7500.0,9000.0,3500.0,10000.0,640.0,620.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Wadgaon Sheri,Pune,Grade B,18.5204,73.8567,19.72,18.63,22.68,11321.43,10500.0,6500.0,18000.0,574.0,595.0,14,High,1.0,1.1,Real Property Listings,2026-02-07
+Wadgaon Sheri Bus stand,Pune,Grade C,18.5204,73.8567,8.0,8.0,9.2,6000.0,6000.0,6000.0,6000.0,750.0,750.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wadgaonsheri,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,13000.0,13000.0,13000.0,13000.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Wadki,Pune,Grade C,18.5204,73.8567,10.87,10.87,12.5,4500.0,4500.0,4500.0,4500.0,414.0,414.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Wadmukhwadi,Pune,Grade C,18.5204,73.8567,12.85,12.85,14.78,11000.0,11000.0,11000.0,11000.0,856.0,856.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wageshwar Nagar,Pune,Grade C,18.5204,73.8567,12.16,12.16,13.99,9000.0,9000.0,9000.0,9000.0,740.0,740.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wagholi,Pune,Grade B,18.5204,73.8567,16.23,15.69,18.66,12520.98,12000.0,5000.0,25000.0,797.9,773.0,159,High,1.9,1.9,Real Property Listings,2026-02-07
+Wagholi Kesnand Road,Pune,Grade B,18.5204,73.8567,15.71,15.71,18.07,14000.0,14000.0,14000.0,14000.0,891.0,891.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wakdewadi,Pune,Grade B,18.5204,73.8567,23.33,23.33,26.83,35000.0,35000.0,35000.0,35000.0,1500.0,1500.0,1,Low,3.0,3.0,Real Property Listings,2026-02-07
+Walhekarwadi,Pune,Grade B,18.5204,73.8567,16.77,16.77,19.29,13000.0,13000.0,13000.0,13000.0,775.0,775.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wanawari,Pune,Grade B,18.5204,73.8567,19.08,19.08,21.94,13000.0,13000.0,7000.0,19000.0,660.0,660.0,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+Wanwadi,Pune,Grade B,18.5204,73.8567,23.56,23.16,27.1,23590.91,25000.0,6500.0,30000.0,1002.73,1080.0,11,High,2.2,2.2,Real Property Listings,2026-02-07
+Well Wisher Group,Pune,Grade A,18.5204,73.8567,27.21,27.21,31.29,20000.0,20000.0,20000.0,20000.0,735.0,735.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wireless Colony,Pune,Grade A,18.5204,73.8567,26.78,27.1,30.8,22960.0,19250.0,14500.0,60000.0,916.0,690.0,10,High,1.7,1.7,Real Property Listings,2026-02-07
+Yamuna Nagar,Pune,Grade B,18.5204,73.8567,15.96,15.96,18.35,11250.0,11250.0,10500.0,12000.0,710.0,710.0,2,Low,1.5,1.0,Real Property Listings,2026-02-07
+Yashwant nagar,Pune,Grade B,18.5204,73.8567,19.87,18.33,22.85,11166.67,11000.0,9000.0,13500.0,576.67,600.0,3,Low,1.0,1.0,Real Property Listings,2026-02-07
+Yashwantrao Chavan Natya Graha,Pune,Grade B,18.5204,73.8567,24.0,24.0,27.6,12000.0,12000.0,12000.0,12000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Yerwada,Pune,Grade B,18.5204,73.8567,24.11,22.73,27.72,18269.23,12500.0,5000.0,55000.0,752.69,550.0,13,High,1.7,1.6,Real Property Listings,2026-02-07
+Yewalewadi,Pune,Grade A,18.5204,73.8567,26.87,18.37,30.9,10250.0,10250.0,4500.0,20000.0,569.41,612.0,18,High,1.6,1.7,Real Property Listings,2026-02-07
+Yojana Nagar,Pune,Grade C,18.5204,73.8567,5.33,5.33,6.13,8000.0,8000.0,8000.0,8000.0,1500.0,1500.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Z corner,Pune,Grade B,18.5204,73.8567,15.08,15.08,17.34,6500.0,6500.0,6500.0,6500.0,431.0,431.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Zenith Complex,Pune,Grade A,18.5204,73.8567,34.38,34.38,39.53,11000.0,11000.0,11000.0,11000.0,320.0,320.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+adwait nagar,Pune,Grade A,18.5204,73.8567,26.32,26.32,30.26,25000.0,25000.0,25000.0,25000.0,950.0,950.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+beside Sundar Sankul Society,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,10000.0,10000.0,10000.0,10000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+beside Sundar sankul society,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,10000.0,10000.0,10000.0,10000.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+bibwewadi,Pune,Grade C,18.5204,73.8567,12.31,12.31,14.15,8000.0,8000.0,8000.0,8000.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+bijli nagar,Pune,Grade B,18.5204,73.8567,21.43,21.43,24.64,15000.0,15000.0,15000.0,15000.0,700.0,700.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+borate vasti,Pune,Grade B,18.5204,73.8567,18.52,18.52,21.3,7500.0,7500.0,7500.0,7500.0,405.0,405.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+dutta mandir road,Pune,Grade A,18.5204,73.8567,25.0,25.0,28.75,15000.0,15000.0,15000.0,15000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+gadital hadapser pune,Pune,Grade B,18.5204,73.8567,20.2,20.2,23.23,10000.0,10000.0,10000.0,10000.0,495.0,495.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+gardenia society,Pune,Grade B,18.5204,73.8567,20.0,20.0,23.0,9000.0,9000.0,9000.0,9000.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+ghule nagar,Pune,Grade C,18.5204,73.8567,10.39,10.39,11.95,9000.0,9000.0,9000.0,9000.0,866.0,866.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+keshavnagar,Pune,Grade C,18.5204,73.8567,13.33,13.33,15.33,4000.0,4000.0,4000.0,4000.0,300.0,300.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+khandve nagar,Pune,Grade B,18.5204,73.8567,17.14,17.14,19.71,12000.0,12000.0,12000.0,12000.0,700.0,700.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+kumbre township,Pune,Grade A,18.5204,73.8567,30.48,30.48,35.05,16000.0,16000.0,16000.0,16000.0,525.0,525.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+lane-6,Pune,Grade C,18.5204,73.8567,10.77,10.77,12.38,7000.0,7000.0,7000.0,7000.0,650.0,650.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+loni kalbhor,Pune,Grade C,18.5204,73.8567,10.85,10.85,12.47,6800.0,6800.0,6800.0,6800.0,627.0,627.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+mamata chow,Pune,Grade C,18.5204,73.8567,14.55,14.55,16.73,8000.0,8000.0,8000.0,8000.0,550.0,550.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+manjari budruk,Pune,Grade C,18.5204,73.8567,10.56,10.56,12.14,9500.0,9500.0,9500.0,9500.0,900.0,900.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+manjari farm,Pune,Grade C,18.5204,73.8567,12.01,12.01,13.81,7000.0,7000.0,7000.0,7000.0,583.0,583.0,1,Low,3.0,2.0,Real Property Listings,2026-02-07
+mhatre bridge,Pune,Grade A,18.5204,73.8567,34.29,34.29,39.43,12000.0,12000.0,12000.0,12000.0,350.0,350.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+near orchid scool,Pune,Grade C,18.5204,73.8567,12.5,12.5,14.37,5000.0,5000.0,5000.0,5000.0,400.0,400.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+new sanghavi,Pune,Grade C,18.5204,73.8567,14.17,14.17,16.29,17000.0,17000.0,17000.0,17000.0,1200.0,1200.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+nibm,Pune,Grade B,18.5204,73.8567,16.67,16.67,19.17,20000.0,20000.0,20000.0,20000.0,1200.0,1200.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+orchard hospital,Pune,Grade A,18.5204,73.8567,25.21,25.21,28.99,15000.0,15000.0,15000.0,15000.0,595.0,595.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+panchshil colony,Pune,Grade A,18.5204,73.8567,26.09,26.09,30.0,15000.0,15000.0,15000.0,15000.0,575.0,575.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+pathare vasti,Pune,Grade C,18.5204,73.8567,13.85,13.85,15.92,9000.0,9000.0,9000.0,9000.0,650.0,650.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+paud road,Pune,Grade B,18.5204,73.8567,21.97,21.97,25.27,12500.0,12500.0,10000.0,15000.0,575.0,575.0,2,Low,1.5,1.5,Real Property Listings,2026-02-07
+pune,Pune,Grade B,18.5204,73.8567,15.22,15.22,17.5,6750.0,6750.0,4500.0,9000.0,431.0,431.0,2,Low,1.0,1.0,Real Property Listings,2026-02-07
+rajaram bridge,Pune,Grade A,18.5204,73.8567,25.5,25.5,29.32,23000.0,23000.0,23000.0,23000.0,902.0,902.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+sector-17 and 19 chikhali,Pune,Grade C,18.5204,73.8567,13.46,13.46,15.48,7000.0,7000.0,7000.0,7000.0,520.0,520.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+shelar mala,Pune,Grade C,18.5204,73.8567,11.67,11.67,13.42,7000.0,7000.0,7000.0,7000.0,600.0,600.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+shivshambho nagar lane no4,Pune,Grade B,18.5204,73.8567,22.22,22.22,25.56,10000.0,10000.0,10000.0,10000.0,450.0,450.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+somwar peth,Pune,Grade A,18.5204,73.8567,26.0,26.0,29.9,19500.0,19500.0,19500.0,19500.0,750.0,750.0,1,Low,2.0,1.0,Real Property Listings,2026-02-07
+spring glory hou society,Pune,Grade B,18.5204,73.8567,19.75,19.75,22.72,16000.0,16000.0,16000.0,16000.0,810.0,810.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+wadheshwar nagar,Pune,Grade B,18.5204,73.8567,24.0,24.0,27.6,18000.0,18000.0,18000.0,18000.0,750.0,750.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Dhankawadi,South Pune,Grade B,18.4626,73.8509,17.41,17.14,20.02,8100.0,9000.0,6000.0,10000.0,481.0,425.0,5,Medium,1.0,1.0,Real Property Listings,2026-02-07
+Gagan emerlad Kondhwa,South Pune,Grade C,18.4681,73.8935,13.0,13.0,14.95,13000.0,13000.0,13000.0,13000.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Katraj,South Pune,Grade B,18.4481,73.8687,17.64,16.62,20.28,12571.43,12000.0,8000.0,18000.0,720.57,690.0,14,High,1.5,1.4,Real Property Listings,2026-02-07
+Katraj Kondhwa Road,South Pune,Grade B,18.4481,73.8687,17.36,16.92,19.97,15833.33,14000.0,11500.0,22000.0,925.0,875.0,3,Low,2.3,2.0,Real Property Listings,2026-02-07
+Kondhwa,South Pune,Grade B,18.4681,73.8935,18.37,17.68,21.13,19807.69,19000.0,5500.0,45000.0,1090.19,1010.0,26,High,2.3,2.3,Real Property Listings,2026-02-07
+Kondhwa Budruk,South Pune,Grade B,18.4681,73.8935,18.09,18.0,20.8,12785.71,12500.0,8000.0,18000.0,712.29,650.0,7,Medium,1.7,1.6,Real Property Listings,2026-02-07
+Narhe,South Pune,Grade C,18.4605,73.7956,13.73,12.73,15.79,8000.0,7000.0,5500.0,14000.0,575.91,550.0,11,High,1.1,1.2,Real Property Listings,2026-02-07
+Undri,South Pune,Grade A,18.4626,73.9159,26.72,17.9,30.73,16097.54,13500.0,8000.0,50000.0,844.99,774.0,41,High,2.0,2.0,Real Property Listings,2026-02-07
+Undri Chowck,South Pune,Grade C,18.4626,73.9159,13.91,13.91,16.0,8000.0,8000.0,8000.0,8000.0,575.0,575.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Undri Pune,South Pune,Grade B,18.4626,73.9159,16.44,16.44,18.9,18000.0,18000.0,18000.0,18000.0,1095.0,1095.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wanowrie,South Pune,Grade B,18.4864,73.9095,22.05,21.33,25.36,23869.05,24000.0,7500.0,40000.0,1102.02,1150.0,42,High,2.3,2.2,Real Property Listings,2026-02-07
+Warje,South Pune,Grade B,18.48,73.8074,20.97,22.06,24.12,14119.05,13000.0,5500.0,25000.0,669.52,700.0,21,High,1.6,1.7,Real Property Listings,2026-02-07
+Warje Malwadi,South Pune,Grade B,18.48,73.8074,18.11,17.18,20.82,9125.0,9000.0,6500.0,12000.0,500.0,525.0,4,Low,1.0,1.0,Real Property Listings,2026-02-07
+katraj,South Pune,Grade C,18.4481,73.8687,7.06,7.06,8.12,6000.0,6000.0,6000.0,6000.0,850.0,850.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+undri,South Pune,Grade C,18.4626,73.9159,13.89,13.89,15.97,7500.0,7500.0,7500.0,7500.0,540.0,540.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Aundh,West Pune,Grade A,18.559,73.8072,26.26,26.19,30.2,21016.89,19000.0,4625.0,50000.0,804.65,800.0,37,High,1.7,1.7,Real Property Listings,2026-02-07
+Aundh Gaon,West Pune,Grade B,18.559,73.8072,24.47,24.71,28.14,19000.0,17000.0,11000.0,29000.0,774.43,800.0,7,Medium,1.9,1.7,Real Property Listings,2026-02-07
+Aundh Road,West Pune,Grade B,18.559,73.8072,18.52,18.52,21.3,10000.0,10000.0,10000.0,10000.0,540.0,540.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Aundh-Baner link road,West Pune,Grade A,18.559,73.7804,31.25,31.25,35.94,15000.0,15000.0,15000.0,15000.0,480.0,480.0,1,Low,1.0,2.0,Real Property Listings,2026-02-07
+BANER PASN LINK ROAD,West Pune,Grade B,18.559,73.7804,18.0,18.0,20.7,18000.0,18000.0,18000.0,18000.0,1000.0,1000.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Balewadi,West Pune,Grade A,18.5684,73.7696,25.19,23.43,28.97,26983.47,23000.0,12000.0,80000.0,1080.07,970.5,30,High,2.2,2.3,Real Property Listings,2026-02-07
+Balewadi Phata,West Pune,Grade A,18.5684,73.7696,26.74,26.25,30.75,23199.6,21000.0,17999.0,35000.0,862.6,850.0,5,Medium,2.0,2.0,Real Property Listings,2026-02-07
+Baner,West Pune,Grade B,18.559,73.7804,24.28,23.7,27.93,27455.62,23000.0,8200.0,95000.0,1301.59,1000.0,87,High,2.4,2.4,Real Property Listings,2026-02-07
+Baner Pashan Link Road,West Pune,Grade B,18.559,73.7804,22.54,18.0,25.92,21333.33,21000.0,18000.0,25000.0,1015.67,1000.0,3,Low,2.3,2.3,Real Property Listings,2026-02-07
+Baner-Sus,West Pune,Grade B,18.559,73.7804,21.83,21.88,25.11,24666.67,21250.0,15500.0,45000.0,1139.17,1025.0,6,Medium,2.5,2.5,Real Property Listings,2026-02-07
+Bavdhan,West Pune,Grade B,18.5125,73.7738,22.88,22.86,26.31,17875.0,16500.0,5000.0,42000.0,794.11,810.5,38,High,1.9,1.8,Real Property Listings,2026-02-07
+HINJEWADI MAIN ROAD,West Pune,Grade C,18.5912,73.7337,10.16,10.16,11.68,6500.0,6500.0,6500.0,6500.0,640.0,640.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Hinjewadi,West Pune,Grade B,18.5912,73.7337,21.36,20.45,24.56,15500.91,15000.0,4200.0,35000.0,747.39,760.0,129,High,1.9,1.9,Real Property Listings,2026-02-07
+Hinjewadi Lakshmi chowk,West Pune,Grade B,18.5912,73.7337,17.0,17.0,19.55,8500.0,8500.0,8500.0,8500.0,500.0,500.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Hinjewadi Phase 1,West Pune,Grade B,18.5912,73.7337,20.88,19.67,24.02,16255.87,17000.0,6990.0,24768.74,832.1,868.5,10,High,1.8,1.8,Real Property Listings,2026-02-07
+Hinjewadi Phase 2,West Pune,Grade B,18.5912,73.7337,20.91,21.69,24.04,18071.43,17500.0,7500.0,32500.0,867.29,803.0,14,High,2.3,2.2,Real Property Listings,2026-02-07
+Hinjewadi pune,West Pune,Grade B,18.5912,73.7337,16.0,16.0,18.4,12000.0,12000.0,12000.0,12000.0,750.0,750.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+Omkar height baner,West Pune,Grade A,18.559,73.7804,25.74,25.74,29.6,17500.0,17500.0,17500.0,17500.0,680.0,680.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Pashan,West Pune,Grade A,18.5367,73.7954,25.48,26.6,29.3,21766.67,20000.0,13500.0,38000.0,901.67,800.0,15,High,2.1,2.1,Real Property Listings,2026-02-07
+Pashan Sus Road,West Pune,Grade B,18.5367,73.7954,20.62,20.62,23.72,16500.0,16500.0,16500.0,16500.0,800.0,800.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Pashan-Sus Road,West Pune,Grade B,18.5367,73.7954,24.71,27.78,28.42,16166.67,18000.0,12500.0,18000.0,716.67,600.0,3,Low,2.0,2.0,Real Property Listings,2026-02-07
+Phase-3 Hinjewadi,West Pune,Grade B,18.5912,73.7337,24.58,22.98,28.26,19360.2,20000.0,12000.0,30000.0,835.24,835.0,25,High,2.0,2.1,Real Property Listings,2026-02-07
+Sus,West Pune,Grade B,18.5598,73.7562,16.56,16.27,19.04,15400.0,16500.0,8500.0,20000.0,928.6,915.5,10,High,1.8,2.0,Real Property Listings,2026-02-07
+Sus gaon,West Pune,Grade C,18.5598,73.7562,14.94,14.94,17.18,13000.0,13000.0,13000.0,13000.0,870.0,870.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+WAKAD,West Pune,Grade B,18.6029,73.7538,16.53,16.33,19.0,11333.33,11000.0,7000.0,16000.0,690.0,680.0,3,Low,1.3,1.3,Real Property Listings,2026-02-07
+Wakad,West Pune,Grade B,18.6029,73.7538,22.0,21.16,25.3,18726.02,18000.0,4500.0,38000.0,887.51,850.0,126,High,2.0,2.0,Real Property Listings,2026-02-07
+Wakad Annexe,West Pune,Grade B,18.6029,73.7538,18.73,20.0,21.54,14666.67,14000.0,14000.0,16000.0,796.0,700.0,3,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wakad Nx,West Pune,Grade C,18.6029,73.7538,13.33,13.33,15.33,16000.0,16000.0,16000.0,16000.0,1200.0,1200.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+Wakadkar Wasti,West Pune,Grade A,18.6029,73.7538,26.04,26.04,29.95,12500.0,12500.0,12500.0,12500.0,480.0,480.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+balewadi,West Pune,Grade B,18.5684,73.7696,24.67,24.67,28.37,18500.0,18500.0,18500.0,18500.0,750.0,750.0,1,Low,2.0,2.0,Real Property Listings,2026-02-07
+bavdhan,West Pune,Grade B,18.5125,73.7738,22.82,22.82,26.24,11500.0,11500.0,11500.0,11500.0,504.0,504.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
+old vitthal mandir bavdhan,West Pune,Grade C,18.5125,73.7738,13.56,13.56,15.59,8000.0,8000.0,8000.0,8000.0,590.0,590.0,1,Low,1.0,1.0,Real Property Listings,2026-02-07
