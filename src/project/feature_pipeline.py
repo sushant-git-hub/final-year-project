@@ -29,6 +29,9 @@ if sys.platform == 'win32':
 # --------------------------------------------------------------------------- #
 # Config
 # --------------------------------------------------------------------------- #
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+_DATA_RAW = os.path.join(_PROJECT_ROOT, "data", "raw")
+
 GRID_SIZE_M = 500  # grid resolution in meters
 BOUNDS = {  # Pune approximate bounds
     "min_lat": 18.4,
@@ -37,8 +40,9 @@ BOUNDS = {  # Pune approximate bounds
     "max_lon": 73.95,
 }
 
-POI_CSV = "pune_all_retail_stores.csv"
-ROADS_CSV = "pune_roads_data.csv"
+POI_CSV = os.path.join(_DATA_RAW, "pune_all_retail_stores.csv")
+ROADS_CSV = os.path.join(_DATA_RAW, "pune_roads_data.csv")
+LOCALITIES_CSV = os.path.join(_DATA_RAW, "pune_localities_for_postgis.csv")
 
 
 # --------------------------------------------------------------------------- #
@@ -175,6 +179,42 @@ def compute_poi_features(grid, pois):
     return features
 
 
+def load_localities(path):
+    """Load locality rental data and return GeoDataFrame (EPSG:3857)."""
+    if not os.path.exists(path):
+        return None
+    df = pd.read_csv(path, low_memory=False)
+    df = df[df["latitude"].notna() & df["longitude"].notna()].copy()
+    if df.empty:
+        return None
+    gdf = gpd.GeoDataFrame(
+        df,
+        geometry=gpd.points_from_xy(df.longitude, df.latitude),
+        crs="EPSG:4326",
+    ).to_crs(3857)
+    return gdf
+
+
+def compute_rental_features(grid, localities):
+    """Assign nearest locality's rental data to each grid cell."""
+    if localities is None or localities.empty:
+        return None
+    cols = ["commercial_rent_per_sqft", "zone", "tier", "confidence", "locality"]
+    cols = [c for c in cols if c in localities.columns]
+    if not cols:
+        return None
+    nearest = gpd.sjoin_nearest(
+        grid[["cell_id", "geometry"]],
+        localities[["geometry"] + cols],
+        how="left",
+        distance_col="locality_dist_m",
+    )
+    out_cols = ["cell_id"] + cols + ["locality_dist_m"]
+    feat = nearest[out_cols].drop_duplicates(subset="cell_id", keep="first")
+    feat["commercial_rent_per_sqft"] = feat["commercial_rent_per_sqft"].fillna(0)
+    return feat
+
+
 def compute_road_features(grid, roads):
     # road density per cell (meters per sq km), major-road distance
     grid_proj = grid.copy()
@@ -202,7 +242,7 @@ def compute_road_features(grid, roads):
     return features
 
 
-def write_to_db(engine, grid, poi_feat, road_feat):
+def write_to_db(engine, grid, poi_feat, road_feat, rental_feat=None):
     # Write grid and features
     grid_out = grid[["cell_id", "center_lon", "center_lat", "geometry"]].to_crs(4326)
     grid_out.to_postgis("grid_cells", engine, if_exists="replace", index=False)
@@ -211,12 +251,20 @@ def write_to_db(engine, grid, poi_feat, road_feat):
     poi_gdf = grid[["cell_id", "geometry"]].merge(poi_feat, on="cell_id", how="left")
     poi_gdf = poi_gdf[["cell_id"] + [c for c in poi_feat.columns if c != "cell_id"] + ["geometry"]].to_crs(4326)
     poi_gdf.to_postgis("poi_features", engine, if_exists="replace", index=False)
-    
+
     road_gdf = grid[["cell_id", "geometry"]].merge(road_feat, on="cell_id", how="left")
     road_gdf = road_gdf[["cell_id"] + [c for c in road_feat.columns if c != "cell_id"] + ["geometry"]].to_crs(4326)
     road_gdf.to_postgis("road_features", engine, if_exists="replace", index=False)
-    
-    print("[OK] Written grid_cells, poi_features, road_features to Postgres")
+
+    tables = ["grid_cells", "poi_features", "road_features"]
+
+    if rental_feat is not None:
+        rental_gdf = grid[["cell_id", "geometry"]].merge(rental_feat, on="cell_id", how="left")
+        rental_gdf = rental_gdf[["cell_id"] + [c for c in rental_feat.columns if c != "cell_id"] + ["geometry"]].to_crs(4326)
+        rental_gdf.to_postgis("rental_features", engine, if_exists="replace", index=False)
+        tables.append("rental_features")
+
+    print(f"[OK] Written {', '.join(tables)} to Postgres")
 
 
 def main():
@@ -225,6 +273,12 @@ def main():
     pois = clean_poi(POI_CSV)
     roads = clean_roads(ROADS_CSV)
     print(f"POIs kept: {len(pois)}, Roads kept: {len(roads)}")
+
+    localities = load_localities(LOCALITIES_CSV)
+    if localities is not None:
+        print(f"Localities loaded: {len(localities)}")
+    else:
+        print("Locality rental data not found (skipping rental features)")
 
     print("Building grid...")
     grid = create_grid(BOUNDS, GRID_SIZE_M)
@@ -235,9 +289,14 @@ def main():
     print("Computing road features...")
     road_feat = compute_road_features(grid, roads)
 
+    rental_feat = None
+    if localities is not None:
+        print("Computing rental features...")
+        rental_feat = compute_rental_features(grid, localities)
+
     print("Writing to Postgres...")
     engine = get_engine(cfg)
-    write_to_db(engine, grid, poi_feat, road_feat)
+    write_to_db(engine, grid, poi_feat, road_feat, rental_feat)
     print("Done.")
 
 
