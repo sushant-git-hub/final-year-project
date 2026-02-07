@@ -43,6 +43,7 @@ BOUNDS = {  # Pune approximate bounds
 POI_CSV = os.path.join(_DATA_RAW, "pune_all_retail_stores.csv")
 ROADS_CSV = os.path.join(_DATA_RAW, "pune_roads_data.csv")
 LOCALITIES_CSV = os.path.join(_DATA_RAW, "pune_localities_for_postgis.csv")
+WARDS_CSV = os.path.join(_DATA_RAW, "pune_wards_for_postgis.csv")
 
 
 # --------------------------------------------------------------------------- #
@@ -215,6 +216,42 @@ def compute_rental_features(grid, localities):
     return feat
 
 
+def load_wards(path):
+    """Load ward demographic data and return GeoDataFrame (EPSG:3857)."""
+    if not os.path.exists(path):
+        return None
+    df = pd.read_csv(path, low_memory=False)
+    df = df[df["latitude"].notna() & df["longitude"].notna()].copy()
+    if df.empty:
+        return None
+    gdf = gpd.GeoDataFrame(
+        df,
+        geometry=gpd.points_from_xy(df.longitude, df.latitude),
+        crs="EPSG:4326",
+    ).to_crs(3857)
+    return gdf
+
+
+def compute_demographic_features(grid, wards):
+    """Assign nearest ward's population to each grid cell."""
+    if wards is None or wards.empty:
+        return None
+    cols = ["total_population", "ward_id", "ward_name", "zone"]
+    cols = [c for c in cols if c in wards.columns]
+    if not cols:
+        return None
+    nearest = gpd.sjoin_nearest(
+        grid[["cell_id", "geometry"]],
+        wards[["geometry"] + cols],
+        how="left",
+        distance_col="ward_dist_m",
+    )
+    out_cols = ["cell_id"] + cols + ["ward_dist_m"]
+    feat = nearest[out_cols].drop_duplicates(subset="cell_id", keep="first")
+    feat["total_population"] = feat["total_population"].fillna(0).astype(int)
+    return feat
+
+
 def compute_road_features(grid, roads):
     # road density per cell (meters per sq km), major-road distance
     grid_proj = grid.copy()
@@ -242,7 +279,7 @@ def compute_road_features(grid, roads):
     return features
 
 
-def write_to_db(engine, grid, poi_feat, road_feat, rental_feat=None):
+def write_to_db(engine, grid, poi_feat, road_feat, rental_feat=None, demographic_feat=None):
     # Write grid and features
     grid_out = grid[["cell_id", "center_lon", "center_lat", "geometry"]].to_crs(4326)
     grid_out.to_postgis("grid_cells", engine, if_exists="replace", index=False)
@@ -264,6 +301,12 @@ def write_to_db(engine, grid, poi_feat, road_feat, rental_feat=None):
         rental_gdf.to_postgis("rental_features", engine, if_exists="replace", index=False)
         tables.append("rental_features")
 
+    if demographic_feat is not None:
+        demo_gdf = grid[["cell_id", "geometry"]].merge(demographic_feat, on="cell_id", how="left")
+        demo_gdf = demo_gdf[["cell_id"] + [c for c in demographic_feat.columns if c != "cell_id"] + ["geometry"]].to_crs(4326)
+        demo_gdf.to_postgis("demographic_features", engine, if_exists="replace", index=False)
+        tables.append("demographic_features")
+
     print(f"[OK] Written {', '.join(tables)} to Postgres")
 
 
@@ -280,6 +323,12 @@ def main():
     else:
         print("Locality rental data not found (skipping rental features)")
 
+    wards = load_wards(WARDS_CSV)
+    if wards is not None:
+        print(f"Wards loaded: {len(wards)}")
+    else:
+        print("Ward demographic data not found (skipping demographic features)")
+
     print("Building grid...")
     grid = create_grid(BOUNDS, GRID_SIZE_M)
     print(f"Grid cells: {len(grid)}")
@@ -294,9 +343,14 @@ def main():
         print("Computing rental features...")
         rental_feat = compute_rental_features(grid, localities)
 
+    demographic_feat = None
+    if wards is not None:
+        print("Computing demographic features...")
+        demographic_feat = compute_demographic_features(grid, wards)
+
     print("Writing to Postgres...")
     engine = get_engine(cfg)
-    write_to_db(engine, grid, poi_feat, road_feat, rental_feat)
+    write_to_db(engine, grid, poi_feat, road_feat, rental_feat, demographic_feat)
     print("Done.")
 
 

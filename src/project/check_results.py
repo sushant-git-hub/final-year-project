@@ -92,32 +92,71 @@ def check_results():
                 print(f"  - Min commercial rent: Rs {rental_stats[1]:.2f}/sqft")
                 print(f"  - Max commercial rent: Rs {rental_stats[2]:.2f}/sqft")
 
+        # Check demographic features (if table exists)
+        cursor.execute("""
+            SELECT EXISTS (
+                SELECT FROM information_schema.tables
+                WHERE table_schema = 'public' AND table_name = 'demographic_features'
+            );
+        """)
+        has_demographic = cursor.fetchone()[0]
+        if has_demographic:
+            cursor.execute("SELECT COUNT(*) FROM demographic_features;")
+            demo_count = cursor.fetchone()[0]
+            cursor.execute("""
+                SELECT AVG(total_population), MAX(total_population), MIN(total_population)
+                FROM demographic_features WHERE total_population > 0;
+            """)
+            demo_stats = cursor.fetchone()
+            print(f"\nDemographic Features: {demo_count:,} cells")
+            if demo_stats[0]:
+                print(f"  - Avg ward population per cell: {demo_stats[0]:,.0f}")
+                print(f"  - Max ward population: {demo_stats[1]:,.0f}")
+                print(f"  - Min ward population: {demo_stats[2]:,.0f}")
+
         # Sample data
         print("\n" + "=" * 60)
         print("Sample Grid Cell Data:")
         print("=" * 60)
-        if has_rental:
-            cursor.execute("""
-                SELECT 
-                    g.cell_id, g.center_lat, g.center_lon,
-                    p.competitor_count, p.nearest_m,
-                    r.road_density_km, r.major_dist_m,
-                    rt.commercial_rent_per_sqft, rt.zone
+        if has_rental or has_demographic:
+            cols = ["g.cell_id", "g.center_lat", "g.center_lon", "p.competitor_count", "p.nearest_m", "r.road_density_km", "r.major_dist_m"]
+            sel = ", ".join(cols)
+            joins = "LEFT JOIN poi_features p ON g.cell_id = p.cell_id LEFT JOIN road_features r ON g.cell_id = r.cell_id"
+            if has_rental:
+                sel += ", rt.commercial_rent_per_sqft, rt.zone"
+                joins += " LEFT JOIN rental_features rt ON g.cell_id = rt.cell_id"
+            if has_demographic:
+                sel += ", d.total_population, d.ward_name"
+                joins += " LEFT JOIN demographic_features d ON g.cell_id = d.cell_id"
+            cursor.execute(f"""
+                SELECT {sel}
                 FROM grid_cells g
-                LEFT JOIN poi_features p ON g.cell_id = p.cell_id
-                LEFT JOIN road_features r ON g.cell_id = r.cell_id
-                LEFT JOIN rental_features rt ON g.cell_id = rt.cell_id
+                {joins}
                 WHERE p.competitor_count > 0
                 ORDER BY p.competitor_count DESC
                 LIMIT 5;
             """)
             print("\nTop 5 cells by competitor count:")
-            print(f"{'Cell ID':<12} {'Lat':<10} {'Lon':<10} {'Competitors':<10} {'Nearest(m)':<10} {'Road Dens':<10} {'Major(m)':<10} {'Rent/sqft':<10} {'Zone':<12}")
-            print("-" * 95)
+            hdr = f"{'Cell ID':<12} {'Lat':<10} {'Lon':<10} {'Competitors':<10} {'Nearest(m)':<10} {'Road Dens':<10} {'Major(m)':<10}"
+            if has_rental:
+                hdr += f" {'Rent/sqft':<10} {'Zone':<12}"
+            if has_demographic:
+                hdr += f" {'Pop':<10} {'Ward':<15}"
+            print(hdr)
+            print("-" * (95 + (25 if has_demographic else 0)))
             for row in cursor.fetchall():
-                rent = f"{row[7]:.1f}" if row[7] else "-"
-                zone = (row[8] or "-")[:12]
-                print(f"{row[0]:<12} {row[1]:<10.6f} {row[2]:<10.6f} {row[3]:<10} {row[4]:<10.1f} {row[5]:<10.2f} {row[6]:<10.1f} {rent:<10} {zone:<12}")
+                line = f"{row[0]:<12} {row[1]:<10.6f} {row[2]:<10.6f} {row[3]:<10} {row[4]:<10.1f} {row[5]:<10.2f} {row[6]:<10.1f}"
+                idx = 7
+                if has_rental:
+                    rent = f"{row[idx]:.1f}" if row[idx] else "-"
+                    zone = (row[idx + 1] or "-")[:12]
+                    line += f" {rent:<10} {zone:<12}"
+                    idx += 2
+                if has_demographic:
+                    pop = f"{int(row[idx]):,}" if row[idx] is not None else "-"
+                    ward = (str(row[idx + 1]) or "-")[:15] if idx + 1 < len(row) else "-"
+                    line += f" {pop:<10} {ward:<15}"
+                print(line)
         else:
             cursor.execute("""
                 SELECT 
@@ -144,8 +183,8 @@ def check_results():
         print("[OK] Data processing complete!")
         print("=" * 60)
         print("\nNext steps:")
-        print("1. Collect demographic data (population, income)")
-        print("2. Add more features (transit, footfall generators)")
+        print("1. Add more features (transit, footfall generators)")
+        print("2. Collect income data (if available)")
         print("3. Build ML models for demand prediction")
         print("4. Build dashboard and API")
         
