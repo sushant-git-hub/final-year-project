@@ -10,13 +10,23 @@ export default function StoreForm() {
   const [type, setType] = useState("");
   const [budget, setBudget] = useState("");
   const [radius, setRadius] = useState("");
+  const [income, setIncome] = useState("");
+  const [zone, setZone] = useState("");
+  const [proximity, setProximity] = useState<string[]>([]);
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // Toggle proximity selection
+  const toggleProximity = (value: string) => {
+    setProximity((prev) =>
+      prev.includes(value) ? prev.filter((p) => p !== value) : [...prev, value]
+    );
+  };
+
   const validateInputs = () => {
     if (!city || !type || !budget || !radius) {
-      setError("All fields are required.");
+      setError("City, Type, Budget and Radius are required.");
       return false;
     }
 
@@ -40,80 +50,159 @@ export default function StoreForm() {
 
     setLoading(true);
 
+    // Encode all params
+    const params = new URLSearchParams({
+      city,
+      type,
+      budget,
+      radius,
+      income,
+      zone,
+      proximity: proximity.join(","), // Pass as comma-separated string
+    });
+
     // Simulate system processing (data collection + ML analysis)
     setTimeout(() => {
-      router.push(
-        `/results?city=${city}&type=${type}&budget=${budget}&radius=${radius}`
-      );
-    }, 1200);
+      router.push(`/results?${params.toString()}`);
+    }, 800);
   };
 
   return (
-    <div className="rounded-xl bg-white p-4 shadow">
-      <h2 className="mb-4 text-xl font-semibold">
+    <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
+      <h2 className="mb-6 text-xl font-semibold text-gray-800 border-b border-gray-50 pb-2">
         Store Configuration
       </h2>
 
       {/* Error Message */}
       {error && (
-        <div className="mb-4 rounded bg-red-100 px-3 py-2 text-sm text-red-700">
+        <div className="mb-4 rounded bg-red-50 px-3 py-2 text-sm text-red-600 border border-red-100">
           {error}
         </div>
       )}
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-        {/* City */}
-        <input
-          placeholder="City"
-          className="rounded border p-2"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-        />
+      <div className="space-y-6">
+        {/* Row 1: Basic Info */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="space-y-1">
+            <label className="text-xs font-medium text-gray-500 uppercase">City</label>
+            <input
+              placeholder="e.g. pune"
+              className="w-full rounded-lg border border-gray-200 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none transition-all"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+            />
+          </div>
 
-        {/* Store Type */}
-        <select
-          className="rounded border p-2"
-          value={type}
-          onChange={(e) => setType(e.target.value)}
-        >
-          <option value="retail">Retail / Quick Commerce</option>
-          <option value="franchise">Franchise Planning</option>
-          <option value="logistics">Logistics / Warehousing</option>
-          <option value="urban">Urban Planning</option>
-          <option value="investment">Investment Analysis</option>
-          <option value="consulting">Consulting / Strategy</option>
-        </select>
+          <div className="space-y-1">
+            <label className="text-xs font-medium text-gray-500 uppercase">Store Type</label>
+            <select
+              className="w-full rounded-lg border border-gray-200 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none bg-white transition-all"
+              value={type}
+              onChange={(e) => setType(e.target.value)}
+            >
+              <option value="">Select option</option>
+              <option value="retail">Grocery / Retail</option>
+              <option value="pharmacy">Pharmacy</option>
+              <option value="clothing">Clothing / Apparel</option>
+              <option value="cafe">Cafe / Restaurant</option>
+              <option value="logistics">Logistics Hub</option>
+            </select>
+          </div>
 
-        {/* Budget */}
-        <input
-          type="number"
-          placeholder="Budget"
-          className="rounded border p-2"
-          value={budget}
-          onChange={(e) => setBudget(e.target.value)}
-        />
+          <div className="space-y-1">
+            <label className="text-xs font-medium text-gray-500 uppercase">Budget (₹)</label>
+            <input
+              type="number"
+              placeholder="e.g. 500000"
+              className="w-full rounded-lg border border-gray-200 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none transition-all"
+              value={budget}
+              onChange={(e) => setBudget(e.target.value)}
+            />
+          </div>
 
-        {/* Radius */}
-        <input
-          type="number"
-          placeholder="Delivery Radius (km)"
-          className="rounded border p-2"
-          value={radius}
-          onChange={(e) => setRadius(e.target.value)}
-        />
+          <div className="space-y-1">
+            <label className="text-xs font-medium text-gray-500 uppercase">Radius (km)</label>
+            <input
+              type="number"
+              placeholder="1-20"
+              className="w-full rounded-lg border border-gray-200 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none transition-all"
+              value={radius}
+              onChange={(e) => setRadius(e.target.value)}
+            />
+          </div>
+        </div>
+
+        {/* Row 2: Advanced Targeting */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="space-y-1">
+            <label className="text-xs font-medium text-gray-500 uppercase">Income Level (Optional)</label>
+            <select
+              className="w-full rounded-lg border border-gray-200 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none bg-white transition-all"
+              value={income}
+              onChange={(e) => setIncome(e.target.value)}
+            >
+              <option value="">Any</option>
+              <option value="low">Low Income</option>
+              <option value="middle">Middle Income</option>
+              <option value="high">High Income</option>
+            </select>
+          </div>
+
+          <div className="space-y-1">
+            <label className="text-xs font-medium text-gray-500 uppercase">Preferred Zone (Optional)</label>
+            <select
+              className="w-full rounded-lg border border-gray-200 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none bg-white transition-all"
+              value={zone}
+              onChange={(e) => setZone(e.target.value)}
+            >
+              <option value="">Any</option>
+              <option value="north">North</option>
+              <option value="south">South</option>
+              <option value="east">East</option>
+              <option value="west">West</option>
+              <option value="central">Central</option>
+            </select>
+          </div>
+
+          <div className="space-y-1">
+            <label className="text-xs font-medium text-gray-500 uppercase">Proximity (Optional)</label>
+            <div className="flex flex-wrap gap-2 mt-1">
+              {['Metro', 'Mall', 'Highway'].map(p => (
+                <button
+                  key={p}
+                  onClick={() => toggleProximity(p)}
+                  className={`px-3 py-1 text-xs rounded-full border transition-all ${proximity.includes(p)
+                    ? 'bg-blue-100 border-blue-200 text-blue-700 font-medium'
+                    : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50'
+                    }`}
+                >
+                  {p}
+                </button>
+              ))}
+            </div>
+          </div>
+
+        </div>
       </div>
 
       {/* Submit Button */}
-      <button
-        onClick={handleSubmit}
-        disabled={loading}
-        className={`mt-4 rounded px-4 py-2 text-white ${loading
+      <div className="mt-8 flex justify-end border-t border-gray-50 pt-4">
+        <button
+          onClick={handleSubmit}
+          disabled={loading}
+          className={`rounded-lg px-8 py-3 text-sm font-bold text-white transition-all shadow-md transform active:scale-95 ${loading
             ? "cursor-not-allowed bg-gray-400"
-            : "bg-green-600 hover:bg-green-700"
-          }`}
-      >
-        {loading ? "Analyzing Locations..." : "Generate Recommendations"}
-      </button>
+            : "bg-blue-600 hover:bg-blue-700 hover:shadow-lg"
+            }`}
+        >
+          {loading ? (
+            <span className="flex items-center gap-2">
+              <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full"></span>
+              Analyzing 40+ ML Features...
+            </span>
+          ) : "Run AI Analysis"}
+        </button>
+      </div>
     </div>
   );
 }

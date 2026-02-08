@@ -89,7 +89,7 @@ export default function LeafletHeatmap({ city }: Props) {
 
       <div
         ref={mapRef}
-        className="h-[450px] w-full rounded-lg"
+        className="h-112.5 w-full rounded-lg"
       />
     </div>
   );
