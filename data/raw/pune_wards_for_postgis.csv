@@ -1,0 +1,74 @@
+﻿ward_id,zone,ward_num,ward_name,latitude,longitude,total_population,data_source,last_updated
+PMC_1,PMC,1.0,Aundh,18.559,73.807,92644.0,Pune Ward Reservation Data,2026-02-07
+PMC_2,PMC,2.0,Baner,18.5596,73.7868,92640.0,Pune Ward Reservation Data,2026-02-07
+PMC_3,PMC,3.0,Bavdhan,18.5074,73.782,92410.0,Pune Ward Reservation Data,2026-02-07
+PMC_4,PMC,4.0,Kothrud,18.5074,73.8077,97187.0,Pune Ward Reservation Data,2026-02-07
+PMC_5,PMC,5.0,Karve Nagar,18.4933,73.821,91381.0,Pune Ward Reservation Data,2026-02-07
+PMC_6,PMC,6.0,Warje Malwadi,18.4875,73.7997,77606.0,Pune Ward Reservation Data,2026-02-07
+PMC_7,PMC,7.0,Shivajinagar,18.5308,73.8475,89957.0,Pune Ward Reservation Data,2026-02-07
+PMC_8,PMC,8.0,Ghole Road,18.5286,73.8493,89693.0,Pune Ward Reservation Data,2026-02-07
+PMC_9,PMC,9.0,Bhavani Peth,18.5167,73.8625,90903.0,Pune Ward Reservation Data,2026-02-07
+PMC_10,PMC,10.0,Kondhwa,18.4575,73.8919,84127.0,Pune Ward Reservation Data,2026-02-07
+PMC_11,PMC,11.0,Wanowrie,18.4856,73.9,76204.0,Pune Ward Reservation Data,2026-02-07
+PMC_12,PMC,12.0,Hadapsar,18.5089,73.926,77669.0,Pune Ward Reservation Data,2026-02-07
+PMC_13,PMC,13.0,Mundhwa,18.5339,73.9486,88569.0,Pune Ward Reservation Data,2026-02-07
+PMC_14,PMC,14.0,Kharadi,18.5511,73.9422,92092.0,Pune Ward Reservation Data,2026-02-07
+PMC_15,PMC,15.0,Vadgaon Sheri,18.5602,73.9198,88586.0,Pune Ward Reservation Data,2026-02-07
+PMC_16,PMC,16.0,Yerwada,18.5486,73.8796,92232.0,Pune Ward Reservation Data,2026-02-07
+PMC_17,PMC,17.0,Vishrantwadi,18.5735,73.8746,92842.0,Pune Ward Reservation Data,2026-02-07
+PMC_18,PMC,18.0,Dhanori,18.5813,73.8912,84763.0,Pune Ward Reservation Data,2026-02-07
+PMC_19,PMC,19.0,Lohegaon,18.5995,73.9168,84619.0,Pune Ward Reservation Data,2026-02-07
+PMC_20,PMC,20.0,Viman Nagar,18.5679,73.9143,78980.0,Pune Ward Reservation Data,2026-02-07
+PMC_21,PMC,21.0,Kalyani Nagar,18.5481,73.9046,80082.0,Pune Ward Reservation Data,2026-02-07
+PMC_22,PMC,22.0,Koregaon Park,18.5362,73.8958,79703.0,Pune Ward Reservation Data,2026-02-07
+PMC_23,PMC,23.0,Camp,18.5132,73.8766,76984.0,Pune Ward Reservation Data,2026-02-07
+PMC_24,PMC,24.0,Kasba Peth,18.5194,73.8553,76233.0,Pune Ward Reservation Data,2026-02-07
+PMC_25,PMC,25.0,Budhwar Peth,18.5176,73.8567,76262.0,Pune Ward Reservation Data,2026-02-07
+PMC_26,PMC,26.0,Rasta Peth,18.5189,73.868,76264.0,Pune Ward Reservation Data,2026-02-07
+PMC_27,PMC,27.0,Bibwewadi,18.4666,73.8664,76111.0,Pune Ward Reservation Data,2026-02-07
+PMC_28,PMC,28.0,Parvati,18.4885,73.8561,76550.0,Pune Ward Reservation Data,2026-02-07
+PMC_29,PMC,29.0,Sahakarnagar,18.4786,73.8486,76194.0,Pune Ward Reservation Data,2026-02-07
+PMC_30,PMC,30.0,Dhankawadi,18.4564,73.8509,76903.0,Pune Ward Reservation Data,2026-02-07
+PMC_31,PMC,31.0,Sinhagad Road,18.4748,73.8233,83098.0,Pune Ward Reservation Data,2026-02-07
+PMC_32,PMC,32.0,Narhe,18.4529,73.8215,82537.0,Pune Ward Reservation Data,2026-02-07
+PMC_33,PMC,33.0,Ambegaon,18.4542,73.8363,87814.0,Pune Ward Reservation Data,2026-02-07
+PMC_34,PMC,34.0,Dattawadi,18.4956,73.8473,83867.0,Pune Ward Reservation Data,2026-02-07
+PMC_35,PMC,35.0,Sadashiv Peth,18.5109,73.849,78493.0,Pune Ward Reservation Data,2026-02-07
+PMC_36,PMC,36.0,Tilak Road,18.5091,73.8557,84660.0,Pune Ward Reservation Data,2026-02-07
+PMC_37,PMC,37.0,Katraj,18.4467,73.857,88253.0,Pune Ward Reservation Data,2026-02-07
+PMC_38,PMC,38.0,Undri,18.4603,73.8954,123981.0,Pune Ward Reservation Data,2026-02-07
+PMC_39,PMC,39.0,Mohammadwadi,18.4709,73.9004,78826.0,Pune Ward Reservation Data,2026-02-07
+PMC_40,PMC,40.0,Pashan,18.5403,73.791,76498.0,Pune Ward Reservation Data,2026-02-07
+PMC_41,PMC,41.0,Balewadi,18.5702,73.7935,86962.0,Pune Ward Reservation Data,2026-02-07
+PCMC_1,PCMC,1.0,Nigdi,18.6515,73.7645,65320.0,Pune Ward Reservation Data,2026-02-07
+PCMC_2,PCMC,2.0,Akurdi,18.6482,73.7769,57694.0,Pune Ward Reservation Data,2026-02-07
+PCMC_3,PCMC,3.0,Chinchwad Gaon,18.6279,73.7997,51628.0,Pune Ward Reservation Data,2026-02-07
+PCMC_4,PCMC,4.0,Thergaon,18.6173,73.7767,55539.0,Pune Ward Reservation Data,2026-02-07
+PCMC_5,PCMC,5.0,Wakad,18.5996,73.7707,49049.0,Pune Ward Reservation Data,2026-02-07
+PCMC_6,PCMC,6.0,Ravet,18.6519,73.7455,52565.0,Pune Ward Reservation Data,2026-02-07
+PCMC_7,PCMC,7.0,Bhosari,18.623,73.8467,53622.0,Pune Ward Reservation Data,2026-02-07
+PCMC_8,PCMC,8.0,Charholi Budruk,18.6356,73.8897,50164.0,Pune Ward Reservation Data,2026-02-07
+PCMC_9,PCMC,9.0,Dighi,18.605,73.8768,59390.0,Pune Ward Reservation Data,2026-02-07
+PCMC_10,PCMC,10.0,Moshi,18.6737,73.839,55699.0,Pune Ward Reservation Data,2026-02-07
+PCMC_11,PCMC,11.0,Alandi,18.6766,73.8983,52878.0,Pune Ward Reservation Data,2026-02-07
+PCMC_12,PCMC,12.0,Chikhali,18.6761,73.8106,49142.0,Pune Ward Reservation Data,2026-02-07
+PCMC_13,PCMC,13.0,Talwade,18.6697,73.8333,55074.0,Pune Ward Reservation Data,2026-02-07
+PCMC_14,PCMC,14.0,Pimple Saudagar,18.597,73.807,56427.0,Pune Ward Reservation Data,2026-02-07
+PCMC_15,PCMC,15.0,Pimple Gurav,18.588,73.8134,51856.0,Pune Ward Reservation Data,2026-02-07
+PCMC_16,PCMC,16.0,Sangvi,18.5793,73.8237,59330.0,Pune Ward Reservation Data,2026-02-07
+PCMC_17,PCMC,17.0,Rahatani,18.6001,73.7944,59089.0,Pune Ward Reservation Data,2026-02-07
+PCMC_18,PCMC,18.0,Pimple Nilakh,18.5923,73.7896,55012.0,Pune Ward Reservation Data,2026-02-07
+PCMC_19,PCMC,19.0,Kalewadi,18.6155,73.8027,54769.0,Pune Ward Reservation Data,2026-02-07
+PCMC_20,PCMC,20.0,Pimpri Gaon,18.6224,73.8061,53549.0,Pune Ward Reservation Data,2026-02-07
+PCMC_21,PCMC,21.0,Nehrunagar,18.6179,73.8221,56800.0,Pune Ward Reservation Data,2026-02-07
+PCMC_22,PCMC,22.0,Ajmera–Morwadi,18.6248,73.8239,58710.0,Pune Ward Reservation Data,2026-02-07
+PCMC_23,PCMC,23.0,Chinchwad East,18.6352,73.8166,49848.0,Pune Ward Reservation Data,2026-02-07
+PCMC_24,PCMC,24.0,Bhosari MIDC,18.6209,73.8584,47528.0,Pune Ward Reservation Data,2026-02-07
+PCMC_25,PCMC,25.0,Dapodi,18.5804,73.8302,52679.0,Pune Ward Reservation Data,2026-02-07
+PCMC_26,PCMC,26.0,Kasarwadi,18.5901,73.8416,49847.0,Pune Ward Reservation Data,2026-02-07
+PCMC_27,PCMC,27.0,Phugewadi,18.5936,73.8572,50321.0,Pune Ward Reservation Data,2026-02-07
+PCMC_28,PCMC,28.0,Wakad–Hinjewadi,18.5907,73.7408,51550.0,Pune Ward Reservation Data,2026-02-07
+PCMC_29,PCMC,29.0,Maan–Hinjewadi,18.5893,73.7066,49146.0,Pune Ward Reservation Data,2026-02-07
+PCMC_30,PCMC,30.0,Punawale,18.6312,73.7487,57004.0,Pune Ward Reservation Data,2026-02-07
+PCMC_31,PCMC,31.0,Tathawade,18.6214,73.7635,51849.0,Pune Ward Reservation Data,2026-02-07
+PCMC_32,PCMC,32.0,Pimple Chinchwad Central,18.6185,73.814,54614.0,Pune Ward Reservation Data,2026-02-07

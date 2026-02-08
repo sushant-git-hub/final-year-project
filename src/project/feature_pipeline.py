@@ -44,6 +44,11 @@ POI_CSV = os.path.join(_DATA_RAW, "pune_all_retail_stores.csv")
 ROADS_CSV = os.path.join(_DATA_RAW, "pune_roads_data.csv")
 LOCALITIES_CSV = os.path.join(_DATA_RAW, "pune_localities_for_postgis.csv")
 WARDS_CSV = os.path.join(_DATA_RAW, "pune_wards_for_postgis.csv")
+# New datasets
+FOOTFALL_CSV = os.path.join(_DATA_RAW, "pune_footfall_generators.csv")
+TRANSIT_CSV = os.path.join(_DATA_RAW, "pune_transit_stops.csv")
+INCOME_CSV = os.path.join(_DATA_RAW, "pune_income_proxy.csv")
+LABELS_CSV = os.path.join(_DATA_RAW, "real_training_labels.csv")
 
 
 # --------------------------------------------------------------------------- #
@@ -232,6 +237,62 @@ def load_wards(path):
     return gdf
 
 
+def load_footfall_generators(path):
+    """Load footfall generator data (malls, IT parks, colleges, hospitals)."""
+    if not os.path.exists(path):
+        return None
+    df = pd.read_csv(path, low_memory=False)
+    df = df[df["latitude"].notna() & df["longitude"].notna()].copy()
+    if df.empty:
+        return None
+    gdf = gpd.GeoDataFrame(
+        df,
+        geometry=gpd.points_from_xy(df.longitude, df.latitude),
+        crs="EPSG:4326",
+    ).to_crs(3857)
+    return gdf
+
+
+def load_transit_stops(path):
+    """Load transit stop data (bus, metro, railway)."""
+    if not os.path.exists(path):
+        return None
+    df = pd.read_csv(path, low_memory=False)
+    df = df[df["latitude"].notna() & df["longitude"].notna()].copy()
+    if df.empty:
+        return None
+    gdf = gpd.GeoDataFrame(
+        df,
+        geometry=gpd.points_from_xy(df.longitude, df.latitude),
+        crs="EPSG:4326",
+    ).to_crs(3857)
+    return gdf
+
+
+def load_income_proxy(path):
+    """Load income proxy data by ward."""
+    if not os.path.exists(path):
+        return None
+    return pd.read_csv(path, low_memory=False)
+
+
+def load_training_labels(path):
+    """Load real training labels from store performance data."""
+    if not os.path.exists(path):
+        return None
+    df = pd.read_csv(path, low_memory=False)
+    df = df[df["latitude"].notna() & df["longitude"].notna()].copy()
+    if df.empty:
+        return None
+    gdf = gpd.GeoDataFrame(
+        df,
+        geometry=gpd.points_from_xy(df.longitude, df.latitude),
+        crs="EPSG:4326",
+    ).to_crs(3857)
+    return gdf
+
+
+
 def compute_demographic_features(grid, wards):
     """Assign nearest ward's population to each grid cell."""
     if wards is None or wards.empty:
@@ -279,7 +340,91 @@ def compute_road_features(grid, roads):
     return features
 
 
-def write_to_db(engine, grid, poi_feat, road_feat, rental_feat=None, demographic_feat=None):
+def compute_footfall_features(grid, footfall_gdf):
+    """Compute footfall generator features for each grid cell."""
+    if footfall_gdf is None or footfall_gdf.empty:
+        return pd.DataFrame({"cell_id": grid["cell_id"], "footfall_generator_count": 0})
+    
+    # Count generators in each cell
+    joined = gpd.sjoin(grid, footfall_gdf, predicate="contains", how="left")
+    counts = joined.groupby("cell_id").size().rename("footfall_generator_count").reset_index()
+    
+    # Count by type
+    type_counts = joined.groupby(["cell_id", "type"]).size().unstack(fill_value=0).reset_index()
+    type_counts.columns = ["cell_id"] + [f"{col.lower().replace(' ', '_')}_count" for col in type_counts.columns[1:]]
+    
+    # Distance to nearest generator
+    nearest = (
+        gpd.sjoin_nearest(grid, footfall_gdf[["geometry"]], how="left", distance_col="nearest_generator_m")
+        .groupby("cell_id")["nearest_generator_m"]
+        .min()
+        .reset_index()
+    )
+    
+    # Merge all features
+    features = grid[["cell_id"]].merge(counts, on="cell_id", how="left")
+    features = features.merge(type_counts, on="cell_id", how="left")
+    features = features.merge(nearest, on="cell_id", how="left")
+    features["footfall_generator_count"] = features["footfall_generator_count"].fillna(0).astype(int)
+    
+    return features
+
+
+def compute_transit_features(grid, transit_gdf):
+    """Compute transit accessibility features for each grid cell."""
+    if transit_gdf is None or transit_gdf.empty:
+        return pd.DataFrame({"cell_id": grid["cell_id"], "transit_stop_count": 0})
+    
+    # Count transit stops in each cell
+    joined = gpd.sjoin(grid, transit_gdf, predicate="contains", how="left")
+    counts = joined.groupby("cell_id").size().rename("transit_stop_count").reset_index()
+    
+    # Count by type
+    type_counts = joined.groupby(["cell_id", "type"]).size().unstack(fill_value=0).reset_index()
+    type_counts.columns = ["cell_id"] + [f"{col.lower().replace(' ', '_')}_count" for col in type_counts.columns[1:]]
+    
+    # Distance to nearest transit stop
+    nearest = (
+        gpd.sjoin_nearest(grid, transit_gdf[["geometry"]], how="left", distance_col="nearest_transit_m")
+        .groupby("cell_id")["nearest_transit_m"]
+        .min()
+        .reset_index()
+    )
+    
+    # Merge all features
+    features = grid[["cell_id"]].merge(counts, on="cell_id", how="left")
+    features = features.merge(type_counts, on="cell_id", how="left")
+    features = features.merge(nearest, on="cell_id", how="left")
+    features["transit_stop_count"] = features["transit_stop_count"].fillna(0).astype(int)
+    
+    return features
+
+
+def compute_income_features(grid, wards_gdf, income_df):
+    """Compute income features by joining ward income data with grid cells."""
+    if wards_gdf is None or income_df is None:
+        return pd.DataFrame({"cell_id": grid["cell_id"]})
+    
+    # Merge income data with ward geometries
+    wards_with_income = wards_gdf.merge(income_df, on="ward_name", how="left")
+    
+    # Spatial join with grid
+    joined = gpd.sjoin(grid, wards_with_income, how="left", predicate="intersects")
+    
+    # Aggregate by cell_id
+    income_features = joined.groupby("cell_id").agg({
+        "avg_monthly_income": "mean",
+        "property_price_sqft": "mean",
+        "purchasing_power_index": "mean",
+        "income_tier": lambda x: x.mode()[0] if len(x) > 0 and x.notna().any() else None
+    }).reset_index()
+    
+    return income_features
+
+
+
+def write_to_db(engine, grid, poi_feat, road_feat, rental_feat=None, demographic_feat=None,
+                footfall_feat=None, transit_feat=None, income_feat=None, labels=None):
     # Write grid and features
     grid_out = grid[["cell_id", "center_lon", "center_lat", "geometry"]].to_crs(4326)
     grid_out.to_postgis("grid_cells", engine, if_exists="replace", index=False)
@@ -307,7 +452,35 @@ def write_to_db(engine, grid, poi_feat, road_feat, rental_feat=None, demographic
         demo_gdf.to_postgis("demographic_features", engine, if_exists="replace", index=False)
         tables.append("demographic_features")
 
+    # NEW - Add footfall features
+    if footfall_feat is not None:
+        footfall_gdf = grid[["cell_id", "geometry"]].merge(footfall_feat, on="cell_id", how="left")
+        footfall_gdf = footfall_gdf[["cell_id"] + [c for c in footfall_feat.columns if c != "cell_id"] + ["geometry"]].to_crs(4326)
+        footfall_gdf.to_postgis("footfall_features", engine, if_exists="replace", index=False)
+        tables.append("footfall_features")
+
+    # NEW - Add transit features
+    if transit_feat is not None:
+        transit_gdf = grid[["cell_id", "geometry"]].merge(transit_feat, on="cell_id", how="left")
+        transit_gdf = transit_gdf[["cell_id"] + [c for c in transit_feat.columns if c != "cell_id"] + ["geometry"]].to_crs(4326)
+        transit_gdf.to_postgis("transit_features", engine, if_exists="replace", index=False)
+        tables.append("transit_features")
+
+    # NEW - Add income features
+    if income_feat is not None:
+        income_gdf = grid[["cell_id", "geometry"]].merge(income_feat, on="cell_id", how="left")
+        income_gdf = income_gdf[["cell_id"] + [c for c in income_feat.columns if c != "cell_id"] + ["geometry"]].to_crs(4326)
+        income_gdf.to_postgis("income_features", engine, if_exists="replace", index=False)
+        tables.append("income_features")
+
+    # NEW - Add training labels (as separate table, not grid-based)
+    if labels is not None:
+        labels_gdf = labels.to_crs(4326)
+        labels_gdf.to_postgis("training_labels", engine, if_exists="replace", index=False)
+        tables.append("training_labels")
+
     print(f"[OK] Written {', '.join(tables)} to Postgres")
+
 
 
 def main():
@@ -348,9 +521,56 @@ def main():
         print("Computing demographic features...")
         demographic_feat = compute_demographic_features(grid, wards)
 
+    # NEW - Load footfall generators
+    footfall = load_footfall_generators(FOOTFALL_CSV)
+    if footfall is not None:
+        print(f"Footfall generators loaded: {len(footfall)}")
+    else:
+        print("Footfall generator data not found (skipping footfall features)")
+
+    # NEW - Load transit stops
+    transit = load_transit_stops(TRANSIT_CSV)
+    if transit is not None:
+        print(f"Transit stops loaded: {len(transit)}")
+    else:
+        print("Transit data not found (skipping transit features)")
+
+    # NEW - Load income proxy
+    income = load_income_proxy(INCOME_CSV)
+    if income is not None:
+        print(f"Income proxy data loaded: {len(income)} wards")
+    else:
+        print("Income proxy data not found (skipping income features)")
+
+    # NEW - Load training labels
+    labels = load_training_labels(LABELS_CSV)
+    if labels is not None:
+        print(f"Training labels loaded: {len(labels)} stores")
+    else:
+        print("Training labels not found (skipping)")
+
+    # NEW - Compute footfall features
+    footfall_feat = None
+    if footfall is not None:
+        print("Computing footfall features...")
+        footfall_feat = compute_footfall_features(grid, footfall)
+
+    # NEW - Compute transit features
+    transit_feat = None
+    if transit is not None:
+        print("Computing transit features...")
+        transit_feat = compute_transit_features(grid, transit)
+
+    # NEW - Compute income features
+    income_feat = None
+    if income is not None and wards is not None:
+        print("Computing income features...")
+        income_feat = compute_income_features(grid, wards, income)
+
     print("Writing to Postgres...")
     engine = get_engine(cfg)
-    write_to_db(engine, grid, poi_feat, road_feat, rental_feat, demographic_feat)
+    write_to_db(engine, grid, poi_feat, road_feat, rental_feat, demographic_feat,
+                footfall_feat, transit_feat, income_feat, labels)
     print("Done.")
 
 
