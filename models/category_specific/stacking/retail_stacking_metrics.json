@@ -1,0 +1,19 @@
+{
+  "category": "retail",
+  "model_type": "stacking_ensemble",
+  "base_models": [
+    "xgboost",
+    "lightgbm",
+    "catboost"
+  ],
+  "train_accuracy": 0.8764909997831273,
+  "test_accuracy": 0.6925411968777103,
+  "test_precision": 0.8149779735682819,
+  "test_recall": 0.7987048030221263,
+  "test_f1": 0.8067593349686563,
+  "test_auc": 0.5472993498997509,
+  "cv_mean": 0.7912619160052152,
+  "n_features": 35,
+  "n_train": 9222,
+  "n_test": 2306
+}
