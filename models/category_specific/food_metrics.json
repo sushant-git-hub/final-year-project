@@ -1,0 +1,14 @@
+{
+  "category": "food",
+  "train_accuracy": 0.9567901234567902,
+  "test_accuracy": 0.680327868852459,
+  "test_precision": 0.76,
+  "test_recall": 0.8351648351648352,
+  "test_f1": 0.7958115183246073,
+  "test_auc": 0.6146756469337114,
+  "cv_mean": 0.7319739872645983,
+  "cv_std": 0.03384091898715843,
+  "n_features": 35,
+  "n_train": 486,
+  "n_test": 122
+}

@@ -1,0 +1,30 @@
+{
+  "category": "food",
+  "model_type": "optimized_xgboost",
+  "train_accuracy": 0.8724279835390947,
+  "test_accuracy": 0.7049180327868853,
+  "test_precision": 0.7669902912621359,
+  "test_recall": 0.8681318681318682,
+  "test_f1": 0.8144329896907216,
+  "test_auc": 0.6217653314427507,
+  "cv_mean": 0.764801517409565,
+  "cv_std": 0.01110687922765411,
+  "n_features": 35,
+  "n_train": 486,
+  "n_test": 122,
+  "hyperparameters": {
+    "n_estimators": 349,
+    "max_depth": 5,
+    "learning_rate": 0.021047644353252407,
+    "min_child_weight": 9,
+    "subsample": 0.7815511436165385,
+    "colsample_bytree": 0.6204308629359869,
+    "gamma": 0.3678597166985985,
+    "reg_alpha": 2.099930367358242,
+    "reg_lambda": 3.3218716422938894,
+    "scale_pos_weight": 1.2686474108943775,
+    "random_state": 42,
+    "tree_method": "hist",
+    "eval_metric": "logloss"
+  }
+}
