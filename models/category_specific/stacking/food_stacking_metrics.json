@@ -1,0 +1,19 @@
+{
+  "category": "food",
+  "model_type": "stacking_ensemble",
+  "base_models": [
+    "xgboost",
+    "lightgbm",
+    "catboost"
+  ],
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.6885245901639344,
+  "test_precision": 0.7731958762886598,
+  "test_recall": 0.8241758241758241,
+  "test_f1": 0.7978723404255319,
+  "test_auc": 0.5909252038284296,
+  "cv_mean": 0.7040283611073477,
+  "n_features": 35,
+  "n_train": 486,
+  "n_test": 122
+}

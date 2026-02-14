@@ -1,0 +1,30 @@
+{
+  "category": "retail",
+  "model_type": "optimized_xgboost",
+  "train_accuracy": 0.850683148991542,
+  "test_accuracy": 0.7350390286209887,
+  "test_precision": 0.8187885010266941,
+  "test_recall": 0.8607663248785753,
+  "test_f1": 0.8392528282031044,
+  "test_auc": 0.5545413499259598,
+  "cv_mean": 0.8015267913751357,
+  "cv_std": 0.0016501208079525511,
+  "n_features": 35,
+  "n_train": 9222,
+  "n_test": 2306,
+  "hyperparameters": {
+    "n_estimators": 849,
+    "max_depth": 10,
+    "learning_rate": 0.010039285894906496,
+    "min_child_weight": 6,
+    "subsample": 0.7241087482341904,
+    "colsample_bytree": 0.7320179743026337,
+    "gamma": 0.41016075170280447,
+    "reg_alpha": 2.4042129080631636,
+    "reg_lambda": 1.9915223589231787,
+    "scale_pos_weight": 1.4108744289943027,
+    "random_state": 42,
+    "tree_method": "hist",
+    "eval_metric": "logloss"
+  }
+}
