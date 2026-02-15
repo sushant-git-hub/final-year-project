@@ -9,3 +9,7 @@ const adapter =
 export async function runMLPredictions(features) {
   return adapter.predict(features);
 }
+
+export async function runBatchMLPredictions(locations) {
+    return adapter.predictBatch(locations);
+}

@@ -3,6 +3,7 @@ import cors from '@fastify/cors';
 import analysisRoutes from './routes/analysis.routes.js';
 import healthRoutes from './routes/health.routes.js';
 import authRoutes from './routes/auth.route.js';
+import predictRoutes from './routes/predict.js';
 
 const app = Fastify({ logger: true });
 
@@ -17,6 +18,7 @@ app.register(cors, {
 // REGISTER ROUTES
 healthRoutes(app);
 analysisRoutes(app);
+predictRoutes(app);
 // authRoutes(app);
 
 export default app;
