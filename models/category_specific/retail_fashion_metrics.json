@@ -1,0 +1,14 @@
+{
+  "category": "retail_fashion",
+  "train_accuracy": 0.9442216551221291,
+  "test_accuracy": 0.7448979591836735,
+  "test_precision": 0.8457446808510638,
+  "test_recall": 0.8442477876106195,
+  "test_f1": 0.8449955713020372,
+  "test_auc": 0.5777078914649308,
+  "cv_mean": 0.8025660232810538,
+  "cv_std": 0.007243879612565376,
+  "n_features": 34,
+  "n_train": 2743,
+  "n_test": 686
+}

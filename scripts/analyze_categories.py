@@ -25,11 +25,12 @@ for typ, count in type_counts.most_common(30):
     print(f"  {typ:40s}: {count:5d} stores")
 
 # Identify main categories based on actual types in the data
+# Priority order: food, retail (3 types), health, services
 main_categories = {
     'food': ['restaurant', 'cafe', 'bakery', 'meal_takeaway', 'meal_delivery'],
-    'retail_general': ['store', 'supermarket', 'grocery_or_supermarket', 'shopping_mall'],
     'retail_fashion': ['clothing_store', 'shoe_store', 'jewelry_store'],
     'retail_electronics': ['electronics_store'],
+    'retail_general': ['store', 'supermarket', 'grocery_or_supermarket', 'shopping_mall'],
     'health': ['pharmacy', 'drugstore', 'hospital', 'doctor', 'dentist'],
     'services': ['beauty_salon', 'hair_care', 'spa', 'gym', 'laundry'],
     'finance': ['atm', 'bank', 'finance'],
