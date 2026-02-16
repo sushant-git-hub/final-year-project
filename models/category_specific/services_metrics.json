@@ -1,0 +1,14 @@
+{
+  "category": "services",
+  "train_accuracy": 0.9183673469387755,
+  "test_accuracy": 0.64,
+  "test_precision": 0.7894736842105263,
+  "test_recall": 0.75,
+  "test_f1": 0.7692307692307693,
+  "test_auc": 0.51,
+  "cv_mean": 0.805,
+  "cv_std": 0.014529663145135591,
+  "n_features": 34,
+  "n_train": 98,
+  "n_test": 25
+}

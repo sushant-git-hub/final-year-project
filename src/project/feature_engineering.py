@@ -277,8 +277,9 @@ def get_feature_columns():
             'center_lat', 'center_lon'
         ],
         'categorical': [
-            'zone', 'tier', 'confidence', 'locality',
-            'ward_id', 'ward_name', 'income_tier'
+            # Removed location-specific features: 'zone', 'locality', 'ward_id', 'ward_name'
+            # These prevent generalization to new areas
+            'tier', 'confidence', 'income_tier'
         ],
         'engineered': [
             'distance_to_city_center',

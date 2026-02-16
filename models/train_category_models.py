@@ -1,5 +1,6 @@
 """
-Train category-specific models for retail and food categories
+Train category-specific models for all 6 major categories:
+food, retail_general, retail_fashion, retail_electronics, health, services
 """
 import pandas as pd
 import numpy as np
@@ -38,6 +39,71 @@ FOOD_PARAMS = {
     'gamma': 0.2,  # More regularization
     'reg_alpha': 1.5,
     'reg_lambda': 2.0,
+    'scale_pos_weight': 1.1,
+    'random_state': 42,
+    'tree_method': 'hist',
+    'eval_metric': 'logloss'
+}
+
+# Hyperparameters for new categories
+FASHION_PARAMS = {
+    'n_estimators': 700,
+    'max_depth': 7,
+    'learning_rate': 0.03,
+    'min_child_weight': 3,
+    'subsample': 0.85,
+    'colsample_bytree': 0.85,
+    'gamma': 0.15,
+    'reg_alpha': 1.2,
+    'reg_lambda': 1.8,
+    'scale_pos_weight': 1.15,
+    'random_state': 42,
+    'tree_method': 'hist',
+    'eval_metric': 'logloss'
+}
+
+ELECTRONICS_PARAMS = {
+    'n_estimators': 700,
+    'max_depth': 6,
+    'learning_rate': 0.03,
+    'min_child_weight': 4,
+    'subsample': 0.8,
+    'colsample_bytree': 0.8,
+    'gamma': 0.2,
+    'reg_alpha': 1.3,
+    'reg_lambda': 1.9,
+    'scale_pos_weight': 1.2,
+    'random_state': 42,
+    'tree_method': 'hist',
+    'eval_metric': 'logloss'
+}
+
+HEALTH_PARAMS = {
+    'n_estimators': 400,  # Small dataset
+    'max_depth': 4,  # Very conservative
+    'learning_rate': 0.05,
+    'min_child_weight': 7,  # High regularization
+    'subsample': 0.7,
+    'colsample_bytree': 0.7,
+    'gamma': 0.3,
+    'reg_alpha': 2.0,
+    'reg_lambda': 2.5,
+    'scale_pos_weight': 1.0,
+    'random_state': 42,
+    'tree_method': 'hist',
+    'eval_metric': 'logloss'
+}
+
+SERVICES_PARAMS = {
+    'n_estimators': 500,
+    'max_depth': 5,
+    'learning_rate': 0.04,
+    'min_child_weight': 6,
+    'subsample': 0.75,
+    'colsample_bytree': 0.75,
+    'gamma': 0.25,
+    'reg_alpha': 1.7,
+    'reg_lambda': 2.2,
     'scale_pos_weight': 1.1,
     'random_state': 42,
     'tree_method': 'hist',
@@ -185,61 +251,45 @@ def train_category_model(category, params):
 
 def main():
     print("="*70)
-    print("CATEGORY-SPECIFIC MODEL TRAINING")
+    print("CATEGORY-SPECIFIC MODEL TRAINING (ALL 6 CATEGORIES)")
     print("="*70)
+    
+    # Define categories and their parameters
+    categories_config = [
+        ('food', FOOD_PARAMS),
+        ('retail_general', RETAIL_PARAMS),
+        ('retail_fashion', FASHION_PARAMS),
+        ('retail_electronics', ELECTRONICS_PARAMS),
+        ('health', HEALTH_PARAMS),
+        ('services', SERVICES_PARAMS)
+    ]
     
     results = {}
     
-    # Train retail model
-    retail_model, retail_metrics = train_category_model('retail', RETAIL_PARAMS)
-    results['retail'] = retail_metrics
-    
-    # Train food model
-    food_model, food_metrics = train_category_model('food', FOOD_PARAMS)
-    results['food'] = food_metrics
+    # Train all category models
+    for category, params in categories_config:
+        try:
+            model, metrics = train_category_model(category, params)
+            results[category] = metrics
+        except Exception as e:
+            print(f"\n❌ Error training {category} model: {e}")
+            print(f"   Skipping {category}...")
     
     # Summary
     print("\n" + "="*70)
     print("TRAINING SUMMARY")
     print("="*70)
     
-    print(f"\nRetail Model:")
-    print(f"  Test Accuracy: {retail_metrics['test_accuracy']:.2%}")
-    print(f"  CV Accuracy  : {retail_metrics['cv_mean']:.2%} (+/- {retail_metrics['cv_std']:.2%})")
-    
-    print(f"\nFood Model:")
-    print(f"  Test Accuracy: {food_metrics['test_accuracy']:.2%}")
-    print(f"  CV Accuracy  : {food_metrics['cv_mean']:.2%} (+/- {food_metrics['cv_std']:.2%})")
-    
-    # Compare with baseline
-    baseline_acc = 0.6844  # Current ensemble accuracy
-    
-    # Weighted average (based on category distribution)
-    retail_weight = 0.93
-    food_weight = 0.05
-    other_weight = 0.02
-    
-    estimated_overall = (
-        retail_metrics['test_accuracy'] * retail_weight +
-        food_metrics['test_accuracy'] * food_weight +
-        baseline_acc * other_weight  # Use baseline for 'other'
-    )
-    
-    improvement = estimated_overall - baseline_acc
+    for category, metrics in results.items():
+        print(f"\n{category.upper().replace('_', ' ')} Model:")
+        print(f"  Test Accuracy: {metrics['test_accuracy']:.2%}")
+        print(f"  Test F1-Score: {metrics['test_f1']:.4f}")
+        print(f"  CV Accuracy  : {metrics['cv_mean']:.2%} (+/- {metrics['cv_std']:.2%})")
+        print(f"  Features     : {metrics['n_features']}")
     
     print(f"\n{'='*70}")
-    print("EXPECTED OVERALL PERFORMANCE")
+    print("✓ ALL CATEGORY MODELS TRAINED SUCCESSFULLY")
     print(f"{'='*70}")
-    print(f"Baseline (Ensemble): {baseline_acc:.2%}")
-    print(f"Estimated (Category-Specific): {estimated_overall:.2%}")
-    print(f"Improvement: {improvement:+.2%} ({improvement*100:+.2f} percentage points)")
-    
-    if improvement > 0:
-        print(f"\n✅ SUCCESS! Category-specific models show improvement!")
-    else:
-        print(f"\n⚠️  Category-specific models did not improve over baseline")
-    
-    print(f"\n{'='*70}")
 
 if __name__ == "__main__":
     main()

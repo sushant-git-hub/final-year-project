@@ -1,0 +1,14 @@
+{
+  "category": "retail_general",
+  "train_accuracy": 0.906038973567432,
+  "test_accuracy": 0.6967592592592593,
+  "test_precision": 0.7913938260056127,
+  "test_recall": 0.8326771653543307,
+  "test_f1": 0.8115107913669065,
+  "test_auc": 0.5450277699662542,
+  "cv_mean": 0.760148839315506,
+  "cv_std": 0.005096242727952446,
+  "n_features": 35,
+  "n_train": 5183,
+  "n_test": 1296
+}

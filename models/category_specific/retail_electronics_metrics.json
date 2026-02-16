@@ -1,0 +1,14 @@
+{
+  "category": "retail_electronics",
+  "train_accuracy": 0.9683641975308642,
+  "test_accuracy": 0.7685185185185185,
+  "test_precision": 0.8432055749128919,
+  "test_recall": 0.8897058823529411,
+  "test_f1": 0.8658318425760286,
+  "test_auc": 0.6245757918552035,
+  "cv_mean": 0.8160493827160493,
+  "cv_std": 0.015444439510119494,
+  "n_features": 34,
+  "n_train": 1296,
+  "n_test": 324
+}

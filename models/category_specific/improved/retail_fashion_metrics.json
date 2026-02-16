@@ -1,0 +1,28 @@
+{
+  "category": "retail_fashion",
+  "train_accuracy": 0.9442216551221291,
+  "test_accuracy": 0.7448979591836735,
+  "test_precision": 0.8457446808510638,
+  "test_recall": 0.8442477876106195,
+  "test_f1": 0.8449955713020372,
+  "test_auc": 0.5782344767059168,
+  "cv_mean": 0.8037322040390713,
+  "cv_std": 0.008643403974652792,
+  "hyperparameters": {
+    "n_estimators": 1000,
+    "max_depth": 7,
+    "learning_rate": 0.02,
+    "min_child_weight": 3,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "gamma": 0.15,
+    "reg_alpha": 1.2,
+    "reg_lambda": 1.8,
+    "scale_pos_weight": 1.15,
+    "random_state": 42,
+    "tree_method": "hist"
+  },
+  "n_features": 34,
+  "n_train": 2743,
+  "n_test": 686
+}

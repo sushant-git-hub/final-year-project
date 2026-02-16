@@ -1,0 +1,28 @@
+{
+  "category": "retail_electronics",
+  "train_accuracy": 0.9783950617283951,
+  "test_accuracy": 0.7561728395061729,
+  "test_precision": 0.8362369337979094,
+  "test_recall": 0.8823529411764706,
+  "test_f1": 0.8586762075134168,
+  "test_auc": 0.6310803167420815,
+  "cv_mean": 0.8141975308641977,
+  "cv_std": 0.013994795121919312,
+  "hyperparameters": {
+    "n_estimators": 1000,
+    "max_depth": 7,
+    "learning_rate": 0.02,
+    "min_child_weight": 4,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "gamma": 0.15,
+    "reg_alpha": 1.3,
+    "reg_lambda": 1.9,
+    "scale_pos_weight": 1.2,
+    "random_state": 42,
+    "tree_method": "hist"
+  },
+  "n_features": 34,
+  "n_train": 1296,
+  "n_test": 324
+}
