@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function StoreForm() {
   const router = useRouter();
 
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("Pune");
   const [type, setType] = useState("");
   const [budget, setBudget] = useState("");
   const [radius, setRadius] = useState("");
@@ -87,9 +87,9 @@ export default function StoreForm() {
             <label className="text-xs font-medium text-gray-500 uppercase">City</label>
             <input
               placeholder="e.g. pune"
-              className="w-full rounded-lg border border-gray-200 dark:border-gray-600 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none bg-transparent dark:bg-gray-700 dark:text-white transition-all"
+              className="w-full rounded-lg border border-gray-200 dark:border-gray-600 p-2 text-sm outline-none bg-gray-50 dark:bg-gray-800/50 text-gray-500 dark:text-gray-400 cursor-not-allowed transition-all"
               value={city}
-              onChange={(e) => setCity(e.target.value)}
+              readOnly
             />
           </div>
 
@@ -130,58 +130,6 @@ export default function StoreForm() {
               onChange={(e) => setRadius(e.target.value)}
             />
           </div>
-        </div>
-
-        {/* Row 2: Advanced Targeting */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div className="space-y-1">
-            <label className="text-xs font-medium text-gray-500 uppercase">Income Level (Optional)</label>
-            <select
-              className="w-full rounded-lg border border-gray-200 dark:border-gray-600 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none bg-transparent dark:bg-gray-700 dark:text-white transition-all"
-              value={income}
-              onChange={(e) => setIncome(e.target.value)}
-            >
-              <option value="">Any</option>
-              <option value="low">Low Income</option>
-              <option value="middle">Middle Income</option>
-              <option value="high">High Income</option>
-            </select>
-          </div>
-
-          <div className="space-y-1">
-            <label className="text-xs font-medium text-gray-500 uppercase">Preferred Zone (Optional)</label>
-            <select
-              className="w-full rounded-lg border border-gray-200 dark:border-gray-600 p-2 text-sm focus:border-blue-500 focus:ring-1 outline-none bg-transparent dark:bg-gray-700 dark:text-white transition-all"
-              value={zone}
-              onChange={(e) => setZone(e.target.value)}
-            >
-              <option value="">Any</option>
-              <option value="north">North</option>
-              <option value="south">South</option>
-              <option value="east">East</option>
-              <option value="west">West</option>
-              <option value="central">Central</option>
-            </select>
-          </div>
-
-          <div className="space-y-1">
-            <label className="text-xs font-medium text-gray-500 uppercase">Proximity (Optional)</label>
-            <div className="flex flex-wrap gap-2 mt-1">
-              {['Metro', 'Mall', 'Highway'].map(p => (
-                <button
-                  key={p}
-                  onClick={() => toggleProximity(p)}
-                  className={`px-3 py-1 text-xs rounded-full border transition-all ${proximity.includes(p)
-                    ? 'bg-blue-100 dark:bg-blue-900/50 border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 font-medium'
-                    : 'bg-white dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600'
-                    }`}
-                >
-                  {p}
-                </button>
-              ))}
-            </div>
-          </div>
-
         </div>
       </div>
 
