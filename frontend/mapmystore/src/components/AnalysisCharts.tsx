@@ -147,36 +147,8 @@ export default function AnalysisCharts({ rankings }: ChartProps) {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                {/* Pie Chart: Confidence Dist */}
-                <div className="lg:col-span-1 bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm transition-colors">
-                    <h3 className="text-sm font-bold text-gray-700 dark:text-gray-300 uppercase mb-4">
-                        Model Confidence Distribution
-                    </h3>
-                    <div className="h-[250px] w-full">
-                        <ResponsiveContainer width="100%" height="100%">
-                            <PieChart>
-                                <Pie
-                                    data={pieData}
-                                    cx="50%"
-                                    cy="50%"
-                                    innerRadius={60}
-                                    outerRadius={80}
-                                    paddingAngle={5}
-                                    dataKey="value"
-                                >
-                                    {pieData.map((entry, index) => (
-                                        <Cell key={`cell-${index}`} fill={CONFIDENCE_COLORS[entry.originalName] || COLORS[index % COLORS.length]} />
-                                    ))}
-                                </Pie>
-                                <Tooltip />
-                                <Legend verticalAlign="bottom" height={36} />
-                            </PieChart>
-                        </ResponsiveContainer>
-                    </div>
-                </div>
-
                 {/* Summary Panel */}
-                <div className="lg:col-span-2 bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 p-6 rounded-xl border border-blue-100 dark:border-gray-600 shadow-sm flex flex-col justify-center transition-colors">
+                <div className="lg:col-span-3 bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 p-6 rounded-xl border border-blue-100 dark:border-gray-600 shadow-sm flex flex-col justify-center transition-colors">
                     <h3 className="text-lg font-bold text-indigo-900 dark:text-indigo-100 mb-2">
                         XGBoost Insights Report
                     </h3>
