@@ -39,7 +39,7 @@ from models.prediction_api import StorePredictionAPI
 predictor = StorePredictionAPI()
 
 # In your API endpoint
-@app.post("/api/predict-location")
+@app.post("/api/predict-location") 
 def predict_location(location_data: dict):
     # location_data contains latitude, longitude, and features
     result = predictor.predict_single_location(
